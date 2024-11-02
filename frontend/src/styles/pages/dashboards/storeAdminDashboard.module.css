@@ -1,0 +1,1764 @@
+.antdMenuSideBar{
+    min-height: 100vh !important;
+}
+
+.toggleBtnDiv {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 1rem;
+}
+
+.mainPageDiv {
+    flex: 1;
+    transition: margin-left 0.3s ease;
+}
+.topNavBarDiv ul{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0.4rem 0;
+}
+
+.topNavBarDiv {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0;
+}
+
+
+.unhoverableElement {
+    pointer-events: none !important;
+}
+
+.logoutSpan{
+    color: #ff0000 !important;
+}
+
+
+.topHeaderStoreManagementFullWidth {
+    width: 100%;
+    transition: width 0.3s ease !important;
+}
+
+.fullWidthElement {
+    width: 100% !important;
+}
+
+.topHeadersCard {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+    width: 100%;
+    transition: width 0.3s ease !important;
+
+}
+
+
+
+.collapseBtn {
+    background-color: #7BC558 !important;
+    outline: none !important;
+    box-shadow: none !important;
+    margin: 1rem 0 !important;
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.collapseBtn:hover {
+    background-color: #7BC558 !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #7BC558 !important;
+}
+
+.collapseBtnIcon{
+    color: white !important;
+    transform: scale(1.2) !important;
+}
+
+.sideBarMenu {
+    min-height: 93vh !important;
+}
+
+.centerElementRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.selectStoresOptions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 1rem 1rem;
+}
+
+
+.selectNoResultFound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0 !important;
+    height: 100%;
+}
+.selectNoResultFound p{
+    font-weight: 500 !important;
+    font-size: 1rem !important;
+    margin: 0 3px !important;
+}
+
+.searchSelectIcon{
+    color: #2E3138 !important;
+    font-size: 1.3rem !important;
+    pointer-events: none !important;
+    font-weight: 800 !important;
+}
+
+
+.updateStoreArrayBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.updateStoreArrayBtn:hover,
+.updateStoreArrayBtn:focus{
+    background-color: #EBB3E6 !important;
+    color: white !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #EBB3E6 !important;
+}
+
+
+.deleteStoreArrayBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.deleteStoreArrayBtn:hover,
+.deleteStoreArrayBtn:focus{
+    background-color: #FF5555 !important;
+    color: white !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #FF5555 !important;
+}
+
+
+.resetEmailTemplateForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.resetEmailTemplateForm:hover,
+.resetEmailTemplateForm:focus{
+    background-color: #313638 !important;
+    color: white !important;
+    outline: none !important;
+    font-weight: 600 !important;
+    box-shadow: none !important;
+    border-color: #313638 !important;
+}
+
+.cancelFormEmailTemplateBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #42B2FF;
+    color: white !important;
+}
+
+.cancelFormEmailTemplateBtn:hover,
+.cancelFormEmailTemplateBtn:focus{
+    opacity: 0.9 !important;
+}
+
+.saveFormEmailTemplateBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #313638 !important;
+}
+
+.saveFormEmailTemplateBtn:hover,
+.saveFormEmailTemplateBtn:focus{
+    background-color: #313638 !important;
+    color: white !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #313638 !important;
+}
+
+
+
+
+
+
+.emptyTableTextDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.emptyTableTextDiv span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+
+.addNewStoreBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px !important;
+    background-color: #42B2FF;
+    color: white !important;
+    padding: 1rem 1.5rem !important;
+    border-color: #42B2FF;
+}
+
+.addNewStoreBtn:hover{
+    background-color: #42B2FF !important;
+    color: white !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #42B2FF !important;
+    opacity: 0.9 !important;
+}
+
+.addNewManagerBtnDiv {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem 0;
+}
+
+.addNewManagerBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px !important;
+    background-color: #42B2FF;
+    color: white !important;
+}
+
+.addNewManagerBtn:hover,
+.addNewManagerBtn:focus{
+    background-color: #42B2FF !important;
+    color: white !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #42B2FF !important;
+    opacity: 0.9 !important;
+}
+
+.resetPasswordArrayBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.resetPasswordArrayBtn:hover,
+.resetPasswordArrayBtn:focus{
+    background-color: #7BC558 !important;
+    color: white !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #7BC558 !important;
+    opacity: 0.9 !important;
+}
+
+.lastnameColProfileManagement,
+.firstnameColProfileManagement{
+    max-width: 150px !important;
+    font-size: .75rem !important;
+}
+
+
+.tableTd{
+    max-width: 150px !important;
+    font-size: .75rem !important;
+    text-align: left !important;
+}
+
+.tableTdText {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    min-width: 13rem;
+    text-align: left !important;
+    font-weight: bold !important;
+}
+
+.genderColProfileManagement{
+    width: 10px !important;
+    font-size: 1rem !important;
+
+}
+
+.topHeaderProfileManagementTitle{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.logoutTopNavBarItem,
+.profileTopNavBarItem{
+   min-width: 10rem !important;
+}
+
+.logoutTopNavBarItem:hover span{
+    font-weight: 600 !important;
+}
+.logoutTopNavBarItem:hover svg{
+    transform: scale(1.2) !important;
+}
+.profileTopNavBarItem:hover span{
+    font-weight: 500 !important;
+}
+
+.mainContent {
+    transition: margin-left 0.3s ease;
+    border: 0.3rem solid #fafafa;
+    height: 100%;
+    background-color: #fafafa;
+}
+
+.homePageContent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 2rem;
+    width: 100%;
+
+}
+
+.homePageContentTopHeader {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+
+.homePageAdminCardsDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.topCardElement {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    min-width: 10rem;
+    position: relative;
+}
+
+.minHeightCard {
+    min-height: 10rem !important;
+    align-items: flex-end !important;
+}
+
+.topCardElementAux {
+    flex-direction: column !important;
+}
+
+.topCardElement .cardTitle {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    color: black !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.topCardElement .topCardElementTextDatesTitle {
+    font-size: .8rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    color: black !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.topCardElement .counter {
+    font-size: 1.1rem;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #7BC558;
+    color: white;
+    padding: .3rem 0.5rem;
+    min-width: 5rem;
+    height: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 0 1rem;
+
+}
+
+.topCardElement .topCardElementTextDatesCounter {
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.topCardElementIcon img {
+    width: 3rem;
+    height: 3rem;
+    margin: 0;
+}
+
+.topCardElementIconBadge img {
+    width: 3rem;
+    height: 3rem;
+    margin: 0;
+}
+
+.topCardElementText {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+
+.homePageContentStats {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+
+.homePageAdminStatsDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+
+.boxShadowDiv {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 2px 3px 18px 13px rgba(243, 243, 243, 0.42);
+
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.homePageContent h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    color: black !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.homePageContent h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    color: black !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.statsCharts {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.statsCharts h5 {
+    text-align: left;
+    font-size: 1.1rem;
+    color: #484343;
+    margin-left: .7rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem !important;
+}
+
+.tableStats h5 {
+    text-align: left;
+    font-size: 1.1rem;
+    color: #484343;
+    margin-left: .7rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem !important;
+}
+
+
+
+.chartCircle {
+    padding: 3rem;
+    margin-top: .2rem !important;
+    box-shadow: 2px 3px 18px 13px rgba(243, 243, 243, 0.42);
+    border-radius: 1rem;
+    margin-bottom: 0 !important;
+    max-height: 610px !important;
+
+}
+
+.chartCircleAge {
+    max-height: 540px !important;
+}
+
+.barChartElement {
+    height: 100% !important;
+    max-height: 500px !important;
+}
+
+.barChartDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 1rem 0;
+    width: 100%;
+    box-shadow: 2px 3px 18px 13px rgba(243, 243, 243, 0.42);
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid rgba(196, 218, 172, 0.19);
+}
+
+.topCardElementTextDates {
+    position: relative;
+}
+
+
+.statsTopHeadetFilterDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 1rem 0;
+    padding: 0 1.5rem !important;
+    border-radius: 10px;
+}
+
+.headetFilterDiv {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.headetFilterDiv div {
+    width: 100% !important;
+}
+
+.statsTopHeadetFilterDiv h5 {
+    text-align: left;
+    margin: 0;
+}
+
+.statsTopHeadetFilterDiv {
+
+}
+
+.statsTopHeadetFilterDiv .ant-picker-range {
+    position: relative;
+    display: inline-flex;
+    height: 3rem;
+}
+
+.datePickerDashboardHomePage {
+    width: 100% !important;
+    height: 2rem !important;
+}
+.datePickerDashboardHomePage:focus,
+.datePickerDashboardHomePage:hover {
+    border-color: #dedede !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+.datePickerDashboardHomePage .ant-picker-range .ant-picker-active-bar {
+    background: #7BC558 !important;
+}
+
+.barChartDivSexStats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 1rem 0 0;
+    width: 100%;
+    box-shadow: 2px 3px 18px 13px rgba(243, 243, 243, 0.42);
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid rgba(196, 218, 172, 0.19);
+}
+
+.tableStats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 1rem 0 0;
+    width: 100%;
+    box-shadow: 2px 3px 18px 13px rgba(243, 243, 243, 0.42);
+    padding: 0;
+    border-radius: 10px;
+    border: 3px solid rgba(196, 218, 172, 0.19);
+    margin-bottom: 1rem !important;
+}
+
+.tableStats div {
+    width: 100% !important;
+}
+
+.tableStats .ant-table-pagination {
+    padding: 0 1rem !important;
+}
+
+.mainTable {
+    box-shadow: 2px 3px 18px 13px rgba(243, 243, 243, 0.42);
+
+}
+
+
+
+.ticketsCardsMain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.ticketsCardsDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100% !important;
+}
+
+
+.ticketCardElement {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 2px 3px 18px 13px rgba(243, 243, 243, 0.62);
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.ticketCardElement .cardTitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    color: black !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ticketCardElement .counter {
+    color: black;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.ticketCardBody {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.ticketCardText {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-weight: bold;
+    height: 100%;
+}
+.ticketCardText p {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0;
+    text-transform: capitalize;
+
+}
+
+.prizeCardText  {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    text-transform: capitalize;
+
+}
+.ticketCardIconsPrize {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.ticketCardIconsPrize img {
+    width: 3rem;
+    height: 3rem;
+    margin: 0;
+}
+.ticketCardIconsBarCode {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 0 !important;
+    margin-top: 0;
+    align-items: center;
+}
+
+.ticketCardIconsBarCode img {
+    width: 2rem;
+    height: 2rem;
+    top: 10%;
+    right:4%;
+    margin: 0;
+    position: absolute;
+
+}
+
+
+.loadingDashboardFullPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0;
+    width: 100%;
+    height: 50vh;
+}
+
+.clientsTableColDashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+
+.loadingDashboardFullPage span {
+    font-size: 2.8rem !important;
+}
+
+.loadingDashboardFullPage i {
+    background-color: #87BE4B !important;
+    width: 1.3rem !important;
+    height: 1.3rem !important;
+}
+
+.searchTicketForm {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0;
+    width: 100%;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 2px 3px 18px 13px rgba(243, 243, 243, 0.42);
+}
+
+.submitButtonBlue {
+    background-color: #42B2FF;
+    color: white !important;
+    padding: 1rem 1.5rem !important;
+    border-color: #42B2FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submitButtonBlue:hover{
+    opacity: 0.9 !important;
+}
+
+.greenButton {
+    background-color: #7bc558;
+    color: white !important;
+    padding: 1rem 1.5rem !important;
+    border-color: #7bc558;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.greenButton:hover{
+    opacity: 0.9 !important;
+    border-color: #7bc558 !important;
+    box-shadow: none !important;
+}
+
+.moreFiltersBtn {
+    color: white !important;
+    padding: 1rem 1.5rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    max-height: 1rem;
+    border-radius: 5px;
+    text-decoration: none !important;
+    min-width: 12rem;
+}
+
+.moreFiltersBtnActive {
+    background-color: #FF5555;
+    border-color: #FF5555;
+}
+
+.moreFiltersBtnInactive {
+    background-color: #2D2D2B;
+    border-color: #2D2D2B;
+}
+
+
+.moreFiltersBtn svg {
+    margin-right: .5rem;
+}
+.moreFiltersBtn:hover{
+    opacity: 0.9 !important;
+}
+
+.formItem div:nth-child(1) .ant-row {
+
+}
+
+.ticketStatusTag {
+    position: absolute;
+    top: 0 !important;
+    left: 0 !important;
+}
+
+.ticketStatusTag span {
+    padding: 0.3rem .73rem !important;
+    margin: 0;
+
+}
+
+.ticketStatusTagGenerated span {
+    background-color: #B95F89;
+    border-color: #B95F89;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.ticketStatusTagPrinted span {
+    background-color: #42B2FF;
+    border-color: #42B2FF;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.ticketStatusTagWaiting span {
+    background-color: #FAE364;
+    border-color: #FAE364;
+    color: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.ticketStatusTagWin span {
+    background-color: #7BC558;
+    border-color: #7BC558;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.ticketStatusTagExpired span {
+    background-color: #FF5555;
+    border-color: #FF5555;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.ticketStatusTagCanceled span {
+    background-color: #FF5555;
+    border-color: #FF5555;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.eyeIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8 !important;
+    font-size: 0.8rem !important;
+
+}
+.eyeIcon:hover,
+.eyeIcon:focus{
+    box-shadow: none !important;
+    outline: none !important;
+    opacity: 0.9 !important;
+    border-color: #424040 !important;
+    color: black !important;
+
+}
+.eyeIcon svg{
+    color: black;
+    font-size: 1rem;
+}
+
+.barCodeText {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 1rem 0;
+    width: 100%;
+    font-weight: bold;
+    font-size: .9rem;
+    letter-spacing: 0.09rem;
+    color: black;
+    background: #f8f8f8;
+    border: 1px solid #d2d2d2;
+    border-radius: .7rem;
+    box-shadow: 2px 3px 18px 13px rgba(243, 243, 243, 0.52);
+    position: relative;
+    padding: 0.5rem 1rem;
+
+
+}
+
+.prizeLabel {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    margin: 0 !important;
+    width: 100% !important;
+    font-weight: bold;
+    font-size: .7rem;
+    letter-spacing: 0.09rem;
+    color: #5b5e64;
+}
+
+.selectInputMulti div {
+    max-height: 3rem !important;
+}
+
+.prizeDateGeneration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0;
+    width: 100%;
+    font-weight: 500;
+    font-size: .9rem;
+    color: #5b5e64;
+}
+
+.barCode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem 0 0 0 !important;
+    width: 100%;
+    font-weight: bold;
+    font-size: .7rem;
+    letter-spacing: 0.09rem;
+    color: #5b5e64;
+
+}
+
+
+.firstPrize span {
+    background-color: #3D3633;
+    border-color: #3D3633;
+    color: white;
+    overflow: hidden;
+}
+
+.secondPrize span {
+    background-color: #7BC558;
+    border-color: #7BC558;
+    color: white;
+    overflow: hidden;
+}
+
+.thirdPrize span {
+    background-color: #E8B14A;
+    border-color: #E8B14A;
+    color: white;
+    overflow: hidden;
+}
+
+.fourthPrize span {
+    background-color: #42B2FF;
+    border-color: #42B2FF;
+    color: white;
+    overflow: hidden;
+}
+
+.fifthPrize span {
+    background-color: #EBB3E6;
+    border-color: #EBB3E6;
+    color: white;
+    overflow: hidden;
+}
+
+
+.prizesTag {
+    position: absolute;
+    top: 0 !important;
+    left: 0 !important;
+    margin: 0;
+
+}
+.prizesTag span {
+    padding: 0.3rem .73rem !important;
+    margin: 0;
+}
+
+.prizeCardFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-weight: bold;
+    letter-spacing: 0.09rem;
+    color: #5b5e64;
+
+}
+
+.prizeInfo {
+    margin: 1rem 0 0 0 !important;
+    font-size: .6rem;
+}
+
+.prizeInfoCounters {
+    margin: 1rem 0 0 0 !important;
+    font-size: .9rem;
+}
+
+
+.logoDivSideBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    top: 10px;
+    left: 2%;
+}
+
+.logoDivSideBar:hover{
+    transform: scale(1.1,01);
+}
+
+.logoSideBar {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+
+.logoDivSideBar strong {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #7BC558;
+    margin: 0;
+    padding: 0;
+    margin-right: .1rem;
+}
+
+.tableProfileManagement {
+
+}
+.clientsTableDashboard {
+    width: 100% !important;
+}
+
+
+.profilDetailsBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.profilDetailsBtn:hover,
+.profilDetailsBtn:focus{
+    background-color: #EBB3E6 !important;
+    color: white !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #EBB3E6 !important;
+}
+
+
+
+.topCardElementTextBody {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.topCardElementTextBody ul {
+    width: 50% !important;
+    text-align: left !important;
+}
+
+.topCardElementTextBodyTitleLabel {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    color: black !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.topCardElementTextBodyTitle {
+    font-size: .8rem;
+    font-weight: 400;
+    margin: 0.5rem 0;
+    color: black !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.cardsTitle {
+    position: absolute;
+    right: 3%;
+    top: 10%;
+}
+
+.dashboardAvatar {
+    width: 15rem;
+    height: 12rem;
+    margin: 0;
+    box-shadow: 0px 0px 11px 4px rgb(218 218 218) !important;
+}
+
+
+.searchOneTicketForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0;
+    width: 40%;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 2px 3px 18px 13px rgba(243, 243, 243, 0.42);
+}
+
+
+
+.oneTicketCardElement {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 2px 3px 18px 13px rgba(243, 243, 243, 0.62);
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.oneTicketCardElement .cardTitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    color: black !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.oneTicketCardElement .counter {
+    color: black;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.printBtn {
+    background-color: #1da1f2 !important;
+    color: white !important;
+    padding: 1rem 1.5rem !important;
+    border-color: #1da1f2 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    max-height: 1rem;
+    border-radius: 5px;
+    text-decoration: none !important;
+    min-width: 12rem;
+}
+
+.printBtn:hover{
+    opacity: 0.9 !important;
+}
+
+
+.prizeDatesText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0;
+    width: 100%;
+    font-weight: bold;
+    font-size: .8rem;
+    letter-spacing: 0.09rem;
+    color: #5b5e64;
+}
+
+.confirmGainBtn {
+    background-color: #65b606 !important;
+    color: white !important;
+    padding: 1rem 1.5rem !important;
+    border-color: #65b606 !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    max-height: 1rem;
+    border-radius: 5px;
+    text-decoration: none !important;
+    width: 17rem;
+    font-size: .9rem !important;
+}
+
+.confirmGainBtn:hover{
+    opacity: 0.9 !important;
+}
+
+.cancelTicketBtn {
+    background-color: #FF5555 !important;
+    color: white !important;
+    padding: 1rem 1.5rem !important;
+    border-color: #FF5555 !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .1rem 0;
+    max-height: 1rem;
+    border-radius: 5px;
+    text-decoration: none !important;
+    width: 12rem;
+    font-size: .9rem !important;
+}
+.cancelTicketBtn:hover{
+    opacity: 0.9 !important;
+}
+
+.prizeDatesTextAux {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 1rem 0;
+    width: 100%;
+    font-weight: bold;
+    font-size: .8rem;
+    letter-spacing: 0.09rem;
+    color: #5b5e64;
+}
+
+
+.ticketCardTextOneTicket {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-weight: bold;
+}
+.ticketCardTextOneTicket p {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.gainTableImg {
+    width: 4rem;
+    height: 4rem;
+    margin: 0;
+}
+
+.InfoCards {
+background: #ffffff;
+    color: white;
+    box-shadow: 2px 3px 18px 13px rgba(243, 243, 243, 0.42);
+    min-height: 15rem !important;
+}
+
+
+.InfoCardLeft {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 0.7rem;
+}
+.InfoCardRight {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 0.7rem;
+}
+
+.roleTopNavBar {
+    position: absolute;
+    right: 45%;
+    top: 1.2rem;
+    font-weight: bold;
+    font-size: .8rem;
+    max-width: 10rem;
+}
+
+.clientTopCardDashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: bold !important;
+    box-shadow: 2px 3px 18px 13px rgba(243, 243, 243, 0.42);
+    padding: 20px;
+}
+
+.clientTopCardDashboard img {
+    width: 5rem;
+    height: 5rem;
+    margin: 0;
+}
+
+.modalDetails {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1rem;
+    width: 100%;
+}
+
+.periodsSelector {
+    font-size: 1.1rem !important;
+    width: 100% !important;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 -2rem;
+}
+
+.periodsSelectorRadioGroup{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+    min-width: 500px;
+}
+
+
+.periodsSelectorRadio .ant-radio-checked:after {
+    background-color: #7BC558 !important;
+    border-color: #7BC558 !important;
+}
+
+
+.correspandancesDiv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    font-weight: 400;
+    letter-spacing: 0.09rem;
+    color: #5b5e64;
+    padding: 0 1rem;
+}
+
+.correspandancesTabs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    font-weight: 400;
+    letter-spacing: 0.09rem;
+    color: #5b5e64;
+    padding: 0 1rem;
+    font-size: 1.1rem !important;
+    flex-direction: column;
+}
+
+.headerCorrespandancesTabs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+}
+.headerCorrespandancesTabsTcon {
+    font-size: 1.5rem;
+}
+
+.templatesPersoDiv {
+    border: 1px solid #f6f6f6;
+    background-color: white;
+    padding: 1rem 3rem;
+    box-shadow: 2px 3px 18px 13px rgba(243, 243, 243, 0.42);
+    border-radius: 1rem;
+}
+
+.serviceTag {
+    margin: .4rem 1rem;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    padding: 0.3rem 0.5rem !important;
+
+}
+
+.avatarUploader {
+    width: 12rem !important;
+    height: 12rem !important;
+    margin-bottom: 2rem !important;
+}
+
+.avatarUploaderIcon {
+    font-size: 6rem !important;
+    @media (max-width: 768px) {
+        font-size: 4rem !important;
+    }
+}
+
+.disableAccountBtn,
+.deleteAccountBtn {
+    padding: 1.2rem 2rem !important;
+    font-size: .9rem !important;
+    font-weight: 600 !important;
+    width: 100% !important;
+
+}
+
+.avatarUploaderText {
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 1rem !important;
+    @media (max-width: 768px) {
+        font-size: .7rem !important;
+    }
+}
+
+
+.badgeLevelCard {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 2px 3px 18px 13px rgba(243, 243, 243, 0.62);
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    max-width: 25rem !important;
+}
+
+.badgeLevelCardChecked {
+
+}
+
+.badgeLevelCardDisabled {
+    opacity: 0.5;
+}
+
+
+.badgeLevelCardChecked .checkedIcon,
+.badgeLevelCardDisabled .disabledIcon {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.badgeLevelCardCheckedSideBar .checkedIcon {
+    width: 3rem;
+    height: 3rem;
+    margin: 0;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+
+.badgeLevelCardText  {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    text-transform: capitalize;
+
+}
+
+
+.badgeLevelCardIcons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.badgeLevelCardIcons img {
+    width: 3rem;
+    height: 3rem;
+    margin: 0;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+
+.badgeLabel {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: row !important;
+    margin: 0 !important;
+    width: 100% !important;
+    font-weight: bold;
+    font-size: 1.3rem;
+    letter-spacing: 0.09rem;
+    color: #5b5e64;
+}
+
+
+.badgeCardContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-weight: bold;
+    letter-spacing: 0.09rem;
+    color: #5b5e64;
+}
+
+
+.badgeDescriptionLabel {
+    margin: 1rem 0 0 0 !important;
+    font-size: .75rem;
+}
+
+.badgeLabelSideBar {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: row !important;
+    margin: 0 !important;
+    width: 100% !important;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.09rem;
+    color: #5b5e64;
+}
+
+.sideBarDiv {
+    position: relative;
+}
+
+.badgeLevelCardSideBar {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 2px 3px 18px 13px rgba(243, 243, 243, 0.62);
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    position: fixed;
+    bottom: 2%;
+    left: 1.5%;
+}
+
+
+.formSpinner {
+    position: absolute;
+    top: 2%;
+    left: 3%;
+}
+
+
+.testDrawBtn {
+    background-color: #7BC558 !important;
+    color: white !important;
+    padding: 1rem 1.5rem !important;
+    border-color: #7BC558 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    max-height: 1rem;
+    border-radius: 5px;
+    text-decoration: none !important;
+    width: 12rem;
+    font-size: .9rem !important;
+    max-width: 400px;
+}
+
+.testDrawBtn:disabled {
+    background-color: #7BC558 !important;
+    color: white !important;
+    padding: 1rem 1.5rem !important;
+    border-color: #7BC558 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    max-height: 1rem;
+    border-radius: 5px;
+    text-decoration: none !important;
+    width: 12rem;
+    font-size: .9rem !important;
+    max-width: 400px;
+    opacity: 0.5;
+}
+
+.decodeAnimation {
+    font-size: 2.5rem;
+    padding: 10rem 0;
+    font-weight: bold;
+}

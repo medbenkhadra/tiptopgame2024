@@ -1,0 +1,159 @@
+.topSection {
+  margin-top: -7%;
+}
+
+.topSectionLeftSide {
+  display: flex !important;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column !important;
+  padding: 2rem 5rem !important;
+  padding-bottom: 0 !important;
+  min-height: 40rem !important;
+  position: relative;
+  width: 100vw !important;
+  color: white !important;
+
+}
+
+.topSectionLeftSide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../assets/images/landing-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+    filter: brightness(0.3);
+  object-position: center;
+}
+
+.topSectionRightSide {
+}
+.topSectionRightSide img {
+  width: 50vw;
+  height: 30rem;
+}
+
+.topSectionTextDiv {
+  text-align: center;
+  margin-top: 5rem;
+  padding: 0 15rem;
+}
+
+@media (max-width: 768px) {
+  .topSectionTextDiv {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .topSectionLeftSide {
+    padding: 2rem 2rem !important;
+  }
+  .topSectionRightSide img {
+    width: 100%;
+    height: 20rem;
+  }
+  .topSectionTextDiv {
+    margin-top: 2rem;
+    max-width: 95%;
+  }
+}
+
+
+
+.topSectionTextDiv h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .topSectionTextDiv h1 {
+    font-size: 1.8rem;
+  }
+}
+
+.topSectionTextDiv h1 span {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: var(--green);
+}
+
+@media (max-width: 768px) {
+  .topSectionTextDiv h1 span {
+    font-size: 2rem;
+  }
+}
+
+.topSectionBtnsDiv {
+  display: flex;
+  width: 100%;
+  justify-content :center;
+
+}
+
+.playBtn {
+  align-items: center;
+  min-width: 13rem;
+  font-size: 1rem;
+  font-weight: 500;
+  animation: glowShadow 1s infinite;
+}
+
+@media (max-width: 768px) {
+  .playBtn {
+    font-size: 0.8rem !important;
+  }
+}
+
+.partnerBtn {
+  align-items: center;
+  min-width: 13rem;
+  font-size: 1rem;
+  font-weight: 500;
+  animation: blinking 1.5s infinite;
+}
+
+@keyframes blinkingVisibility {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blinking {
+  0% {
+    color: black;
+    background-color: var(--navbar-actions-bg);
+  }
+  50% {
+    color: #ff0000;
+    background-color: #fff;
+  }
+  100% {
+    color: #fff;
+    background-color: var(--navbar-actions-bg);
+  }
+}
+
+@keyframes glowShadow {
+  0% {
+    box-shadow: 0 0 5px whitesmoke;
+  }
+  50% {
+    box-shadow: 0 0 5px 1px #d2d1d1;
+  }
+  100% {
+    box-shadow: 0 0 5px whitesmoke;
+  }
+}

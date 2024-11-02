@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .top-bar {
+            background-color: #7BC558;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.8rem;
+        }
+
+        .wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            word-break: break-word;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #ffffff;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 1rem;
+        }
+
+        .header img {
+            max-width: 350px;
+            height: auto;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .sub_footer {
+            background-color: #ffffff;
+            color: #000000;
+            text-align: center;
+            padding: 30px;
+            font-size: .7rem;
+            margin: 2rem 0 !important;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 0 !important;
+
+
+        }
+
+        .footer {
+            background-color: #7BC558;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+        }
+
+
+        .activateBtn {
+            background-color: #42B2FF;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 2px;
+            cursor: pointer;
+            border-radius: 1rem;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="wrapper">
+
+    <div class="top-bar">
+        TipTop - Votre partenaire de confiance pour vos jeux concours
+    </div>
+
+    <div class="header">
+        <img src="{{ absolute_url(asset('assets/tiptop_logo.png')) }}" alt="Your Image">
+    </div>
+
+
+
+    <div class="content">
+        {{ content | raw }}
+    </div>
+
+    <div class="sub_footer">
+        <small>
+            TipTop Jeu de concours gratuit organisé par la société TipTop.
+        </small>
+        <small>
+            SAS au capital de 1000€, immatriculée au RCS de Paris sous le numéro 123456789, dont le siège social est situé au 1 rue de la Paix, 75000 Paris.
+        </small>
+        <small>
+            Le règlement du jeu est déposé chez Maître XXXX, huissier de justice à XXXX.
+        </small>
+    </div>
+
+    <div class="footer">
+        © 2024 TipTop tous droits réservés
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,214 @@
+
+.storeSelectionPageTopHeader{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.storeSelectionPageTopHeaderRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 20px;
+}
+
+.storeSelectionPageTopHeaderRow h1{
+    font-size: 1.2rem;
+}
+
+.logoutDiv {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.logoutDiv div,
+.logoutDiv div span{
+    cursor: pointer !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.logoutDiv div:hover span,
+.logoutDiv div:hover .logoutIcon{
+    color: red !important;
+    cursor: pointer;
+}
+
+
+.logoutDiv div span.logoutIcon {
+    font-size: 1.3rem;
+    margin-right: .2em !important;
+    color:  black;
+}
+
+
+.titlesRow,
+.titlesCol {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.titlesCol h1 {
+    font-size: 1.6rem;
+    font-weight: bold !important;
+    margin: 0;
+    padding: 0;
+    margin-bottom: .2rem !important;
+}
+
+.titlesCol h2 {
+    font-size: 1.2rem;
+    font-weight: 500 !important;
+    margin: 0;
+    padding: 0;
+}
+
+.radioBtnDiv{
+    position: relative;
+}
+
+.antdGroupRadioCheckedIcon{
+    position: absolute;
+    right: 1rem !important;
+    bottom: 1rem !important;
+    color: #ffb703 !important;
+    font-size: 1.4rem !important;
+    font-weight: bold !important;
+    background-color: white !important;
+    padding: .4rem !important;
+    border-radius: 50% !important;
+
+}
+
+.antdGroupRadioBtnCol {
+    min-height: 100% !important;
+}
+
+.confirmStoreChoiceBtnDiv {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.confirmStoreChoiceBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    background-color: #87BE4B !important;
+}
+
+.confirmStoreChoiceBtn:hover,
+.confirmStoreChoiceBtn:focus {
+    opacity: .8 !important;
+}
+
+.confirmStoreChoiceBtnContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.confirmStoreChoiceBtnIcon {
+    font-size: 1.3rem;
+    margin-bottom: .2em !important;
+    color:  white;
+}
+
+.modalWithGifImage {
+    z-index: 1 !important;
+}
+
+.gifImage {
+    position: absolute !important;
+    width: 24rem !important;
+    height: 14rem !important;
+    top: 12rem !important;
+    left: 0 !important;
+    z-index: 0 !important;
+}
+
+.selectStoreCardImg {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+    border-radius: 5px;
+    top: 16%;
+    right: 6%;
+
+}
+
+
+.searchTicketForm .ant-row ,
+.searchTicketFormItem .ant-row,
+.searchTicketFormItem .ant-col,
+.searchTicketForm .ant-col,
+.searchTicketForm .ant-form-item-control-input,
+.searchTicketFormItem .ant-form-item-control-input,
+.searchTicketForm .ant-form-item-control-input-content,
+.searchTicketFormItem .ant-form-item-control-input-content{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: flex-start;
+    align-items: self-start;
+    width: 100% !important;
+}
+
+
+.submitButtonBlue {
+    background-color: #FF5555;
+    color: white !important;
+    padding: 1rem 1.5rem !important;
+    border-color: #FF5555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.submitButtonBlue:hover{
+    opacity: 0.9 !important;
+}
+
+
+.searchTicketForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0;
+    width: 100%;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 2px 3px 18px 13px rgba(243, 243, 243, 0.42);
+}
+
+.formDivStoreList {
+    padding: 2rem 30% !important;
+}
+
+
+.fullWidthElement {
+    width: 100% !important;
+}
+
+.formItem {
+
+}
+
+
+.formItem div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 1rem !important;
+}

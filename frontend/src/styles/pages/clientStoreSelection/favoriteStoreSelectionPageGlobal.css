@@ -1,0 +1,84 @@
+
+.ant-radio-button-wrapper {
+    height: 100% !important;
+    margin: 1rem 4rem !important;
+    width: 25% !important;
+    border-radius: 5px !important;
+    /*background-color: #87BE4B !important;*/
+
+}
+
+
+.ant-radio-button-wrapper::before{
+    width: 0 !important;
+}
+
+.ant-radio-button-wrapper:not(.ant-radio-button-wrapper-checked):not(.ant-radio-button-wrapper-disabled) {
+    border: 3px solid #ececec !important;
+}
+
+.ant-radio-button-wrapper:not(.ant-radio-button-wrapper-checked):not(.ant-radio-button-wrapper-disabled),
+.ant-radio-button-wrapper:not(.ant-radio-button-wrapper-checked):not(.ant-radio-button-wrapper-disabled)::before {
+    background-color: #ffffff !important;
+    color: black !important;
+}
+
+.ant-radio-button-wrapper.ant-radio-button-wrapper-checked,
+.ant-radio-button-wrapper.ant-radio-button-wrapper-checked::before {
+    background-color: #42B2FF !important;
+    border-color: #42B2FF !important;
+    color: #ffffff !important;
+}
+
+
+.ant-radio-button-wrapper p  {
+    margin: 0 !important;
+    padding: 0 !important;
+
+}
+
+.ant-radio-button-wrapper:not(.ant-radio-button-wrapper-checked):not(.ant-radio-button-wrapper-disabled):hover {
+    border: 2px solid #42B2FF !important;
+    color: black !important;
+}
+
+.ant-radio-button-wrapper-disabled {
+    background-color: darkgray !important;
+    color: black !important;
+}
+
+.ant-radio-button-wrapper p strong  {
+    font-weight: bold !important;
+    font-size: 1rem;
+}
+
+
+.ant-radio-button-wrapper div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    padding: 1rem !important;
+}
+
+.ant-radio-group {
+    width: 100% !important;
+}
+
+
+.ant-pagination-item-active {
+    background-color: #f6f8f5 !important;
+    border-color: #1c1c1b !important;
+}
+.ant-pagination-item-link svg {
+    color: #262525 !important;
+}
+
+.ant-pagination-item-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

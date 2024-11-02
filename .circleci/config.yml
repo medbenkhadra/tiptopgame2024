@@ -1,0 +1,436 @@
+
+version: 2.1
+#orbs:
+# sonarscanner: psl/sonarscanner@0.0.4
+
+
+jobs:
+
+
+  run_test_front:
+    docker:
+      - image: cimg/node:20.12.1-browsers
+    steps:
+      - checkout
+      - setup_remote_docker:
+          docker_layer_caching: true
+      - run:
+          name: Start tests
+          command: |
+            cd frontend
+            pwd
+            ls -la  
+            npm install
+            npm test
+  
+  
+  
+  
+  
+  
+  
+  
+
+  run_test_backend:
+    docker:
+      - image: cimg/php:8.1.12-browsers
+      - image: mysql:5.6.36
+        environment:
+          MYSQL_ROOT_PASSWORD: root
+        command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_general_ci
+
+    environment:
+      DOCKER_IMAGE_BASE_URL: ghcr.io/furious-ducks-tiptop/backend-staging
+    steps:
+      - checkout
+      - run:
+          name: Start Database
+          command: |
+            docker pull mysql/mysql-server:latest
+            docker run --name db -e MYSQL_ROOT_PASSWORD=root -d mysql/mysql-server:latest
+
+
+      - setup_remote_docker:
+          docker_layer_caching: true
+
+      - run:
+          name: Run tests
+          command: |
+            cd backend
+            pwd
+            ls -la  
+            composer install
+            php bin/console d:d:d --env=test --connection=test --force --if-exists --no-interaction 
+            php bin/console d:d:c --env=test --connection=test  -n
+            php bin/console d:m:m --env=test  -n
+            php bin/console cache:clear --no-warmup --env=test
+            composer update 
+            SYMFONY_DEPRECATIONS_HELPER=disabled  php ./vendor/bin/phpunit 
+  
+  
+
+  build_frontend_dev:
+    docker:
+      - image: docker:20.10.8
+    environment:
+      DOCKER_IMAGE_BASE_URL: ghcr.io/furious-ducks-tiptop/frontend-dev
+    steps:
+      - run: apk update
+      - run: apk add git
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: Building frontend-dev Docker image
+          command: |
+            echo $CI_REGISTRY_TOKEN | docker login ghcr.io -u $CI_REGISTRY_USER --password-stdin
+            cd frontend
+            rm -rf node_modules
+            rm -rf .next
+            docker build --file Dockerfile.dev -t ghcr.io/furious-ducks-tiptop/frontend-dev:latest .
+            docker push ghcr.io/furious-ducks-tiptop/frontend-dev:latest
+
+  build_backend_dev:
+    docker:
+      - image: docker:20.10.8
+    environment:
+      DOCKER_IMAGE_BASE_URL: ghcr.io/furious-ducks-tiptop/backend-dev
+    steps:
+      - run: apk update
+      - run: apk add git
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: Building backend-dev Docker image
+          command: |
+            echo $CI_REGISTRY_TOKEN | docker login ghcr.io -u $CI_REGISTRY_USER --password-stdin
+            cd backend
+            docker build -t ghcr.io/furious-ducks-tiptop/backend-dev:latest .
+            docker push ghcr.io/furious-ducks-tiptop/backend-dev:latest
+
+
+  build_frontend_staging:
+    docker:
+      - image: docker:20.10.8
+    environment:
+      DOCKER_IMAGE_BASE_URL: ghcr.io/furious-ducks-tiptop/frontend-staging
+    steps:
+      - run: apk update
+      - run: apk add git
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: Building frontend-dev Docker image
+          command: |
+            echo $CI_REGISTRY_TOKEN | docker login ghcr.io -u $CI_REGISTRY_USER --password-stdin
+            cd frontend
+            rm -rf node_modules
+            rm -rf .next
+            docker build  --file Dockerfile.staging -t ghcr.io/furious-ducks-tiptop/frontend-staging:latest .
+            docker push ghcr.io/furious-ducks-tiptop/frontend-staging:latest
+
+  build_backend_staging:
+    docker:
+      - image: docker:20.10.8
+    environment:
+      DOCKER_IMAGE_BASE_URL: ghcr.io/furious-ducks-tiptop/backend-staging
+    steps:
+      - run: apk update
+      - run: apk add git
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: Building backend-dev Docker image
+          command: |
+            echo $CI_REGISTRY_TOKEN | docker login ghcr.io -u $CI_REGISTRY_USER --password-stdin
+            cd backend
+            docker build -t ghcr.io/furious-ducks-tiptop/backend-staging:latest .
+            docker push ghcr.io/furious-ducks-tiptop/backend-staging:latest
+
+
+  # Build and push frontend image
+  build_frontend_preprod:
+    docker:
+      - image: docker:20.10.8
+    environment:
+      DOCKER_IMAGE_BASE_URL: ghcr.io/furious-ducks-tiptop/frontend-preprod
+    steps:
+      - run: apk update
+      - run: apk add git
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: building frontend docker image
+          command: |
+            echo $CI_REGISTRY_TOKEN | docker login ghcr.io -u $CI_REGISTRY_USER --password-stdin
+            cd frontend
+            rm -rf node_modules
+            rm -rf .next
+            docker build  --file Dockerfile.preprod -t ghcr.io/furious-ducks-tiptop/frontend-preprod:latest .
+            docker push ghcr.io/furious-ducks-tiptop/frontend-preprod:latest
+
+  # Build and push backend image
+  build_backend_preprod:
+    docker:
+      - image: docker:20.10.8
+    environment:
+      DOCKER_IMAGE_BASE_URL: ghcr.io/furious-ducks-tiptop/backend-preprod
+    steps:
+      - run: apk update
+      - run: apk add git
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: building backend docker image
+          command: |
+            echo $CI_REGISTRY_TOKEN | docker login ghcr.io -u $CI_REGISTRY_USER --password-stdin
+            cd backend
+            docker build -t ghcr.io/furious-ducks-tiptop/backend-preprod:latest .
+            docker push ghcr.io/furious-ducks-tiptop/backend-preprod:latest
+  
+  
+
+  # Build and push frontend image
+  build_frontend:
+    docker:
+      - image: docker:20.10.8
+    environment:
+      DOCKER_IMAGE_BASE_URL: ghcr.io/furious-ducks-tiptop/frontend
+    steps:
+      - run: apk update
+      - run: apk add git
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: building frontend docker image
+          command: |
+            echo $CI_REGISTRY_TOKEN | docker login ghcr.io -u $CI_REGISTRY_USER --password-stdin
+            cd frontend
+            rm -rf node_modules
+            rm -rf .next
+            docker build -t ghcr.io/furious-ducks-tiptop/frontend:latest .
+            docker push ghcr.io/furious-ducks-tiptop/frontend:latest
+
+  # Build and push backend image
+  build_backend:
+    docker:
+      - image: docker:20.10.8
+    environment:
+      DOCKER_IMAGE_BASE_URL: ghcr.io/furious-ducks-tiptop/backend
+    steps:
+      - run: apk update
+      - run: apk add git
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: building backend docker image
+          command: |
+            echo $CI_REGISTRY_TOKEN | docker login ghcr.io -u $CI_REGISTRY_USER --password-stdin
+            cd backend
+            docker build -t ghcr.io/furious-ducks-tiptop/backend:latest .
+            docker push ghcr.io/furious-ducks-tiptop/backend:latest
+
+  # Deploy to production environment
+  deploy_production:
+    docker:
+      - image: almalinux:8.8
+    steps:
+      - run:
+          name: prepare
+          command: |
+            rpm --import https://repo.almalinux.org/almalinux/RPM-GPG-KEY-AlmaLinux
+            yum update -y
+            rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
+            # Check repository configuration
+            cat /etc/yum.repos.d/*.repo
+            yum clean packages
+            yum clean metadata
+            yum makecache
+            yum install -y git curl zip unzip openssh-clients openssh-server
+      - checkout
+      - add_ssh_keys
+      - run: ssh-keyscan -H $VM_IPADDRESS >> ~/.ssh/known_hosts
+      - run:
+          name: deploy
+          command: |
+            # Se connecter à votre serveur et déployer les conteneurs Docker
+            ssh $VM_USER@$VM_IPADDRESS "cd docker && docker-compose pull frontend && docker-compose pull backend && docker-compose up --force-recreate --no-deps -d frontend backend "  
+
+  deploy_development:
+    docker:
+      - image: almalinux:8.8
+    steps:
+      - run:
+          name: prepare
+          command: |
+            rpm --import https://repo.almalinux.org/almalinux/RPM-GPG-KEY-AlmaLinux
+            yum update -y
+            rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
+            # Check repository configuration
+            cat /etc/yum.repos.d/*.repo
+            yum clean packages
+            yum clean metadata
+            yum makecache
+            yum install -y git curl zip unzip openssh-clients openssh-server
+      - checkout
+      - add_ssh_keys
+      - run: ssh-keyscan -H $VM_IPADDRESS >> ~/.ssh/known_hosts
+      - run:
+          name: deploy
+          command: |
+            # Se connecter à votre serveur et déployer les conteneurs Docker
+            ssh $VM_USER@$VM_IPADDRESS "cd docker && docker-compose pull frontend-dev && docker-compose pull backend-dev && docker-compose up --force-recreate --no-deps -d frontend-dev backend-dev "  
+
+
+  deploy_staging:
+    docker:
+      - image: almalinux:8.8
+    steps:
+      - run:
+          name: prepare
+          command: |
+            rpm --import https://repo.almalinux.org/almalinux/RPM-GPG-KEY-AlmaLinux
+            yum update -y
+            rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
+            # Check repository configuration
+            cat /etc/yum.repos.d/*.repo
+            yum clean packages
+            yum clean metadata
+            yum makecache
+            yum install -y git curl zip unzip openssh-clients openssh-server
+      - checkout
+      - add_ssh_keys
+      - run: ssh-keyscan -H $VM_IPADDRESS >> ~/.ssh/known_hosts
+      - run:
+          name: deploy
+          command: |
+            # Se connecter à votre serveur et déployer les conteneurs Docker
+            ssh $VM_USER@$VM_IPADDRESS "cd docker && docker-compose pull frontend-staging && docker-compose pull backend-staging && docker-compose up --force-recreate --no-deps -d frontend-staging backend-staging "  
+
+  deploy_preprod:
+    docker:
+      - image: almalinux:8.8
+    steps:
+      - run:
+          name: prepare
+          command: |
+            rpm --import https://repo.almalinux.org/almalinux/RPM-GPG-KEY-AlmaLinux
+            yum update -y
+            rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
+            # Check repository configuration
+            cat /etc/yum.repos.d/*.repo
+            yum clean packages
+            yum clean metadata
+            yum makecache
+            yum install -y git curl zip unzip openssh-clients openssh-server
+      - checkout
+      - add_ssh_keys
+      - run: ssh-keyscan -H $VM_IPADDRESS >> ~/.ssh/known_hosts
+      - run:
+          name: deploy
+          command: |
+            # Se connecter à votre serveur et déployer les conteneurs Docker
+            ssh $VM_USER@$VM_IPADDRESS "cd docker && docker-compose pull frontend-preprod && docker-compose pull backend-preprod && docker-compose up --force-recreate --no-deps -d frontend-preprod backend-preprod "  
+
+
+workflows:
+  build_and_push:
+    jobs:
+
+      - run_test_front:
+          context: context
+          filters:
+            branches:
+              only: staging
+
+      - run_test_backend:
+          context: context
+          filters:
+            branches:
+              only: staging
+
+      - build_frontend_dev:
+          context: context
+          filters:
+            branches:
+              only: dev
+
+      - build_backend_dev:
+          context: context
+          filters:
+            branches:
+              only: dev
+
+      - build_frontend_staging:
+          context: context
+          requires:
+            - run_test_front
+          filters:
+            branches:
+              only: staging
+
+      - build_backend_staging:
+          context: context
+          requires:
+            - run_test_backend
+          filters:
+            branches:
+              only: staging
+
+      - build_frontend_preprod:
+          context: context
+          filters:
+            branches:
+              only: preprod
+
+      - build_backend_preprod:
+          context: context
+          filters:
+            branches:
+              only: preprod
+
+      - build_frontend:
+          context: context
+          filters:
+            branches:
+              only: main
+
+      - build_backend:
+          context: context
+          filters:
+            branches:
+              only: main
+
+      - deploy_production:
+          context: context
+          requires:
+            - build_frontend
+            - build_backend
+          filters:
+            branches:
+              only: main
+
+      - deploy_development:
+          context: context
+          requires:
+            - build_frontend_dev
+            - build_backend_dev
+          filters:
+            branches:
+              only: dev
+      - deploy_staging:
+          context: context
+          requires:
+            - build_frontend_staging
+            - build_backend_staging
+          filters:
+            branches:
+              only: staging
+
+      - deploy_preprod:
+          context: context
+          requires:
+            - build_frontend_preprod
+            - build_backend_preprod
+          filters:
+            branches:
+              only: preprod

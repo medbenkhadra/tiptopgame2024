@@ -1,0 +1,835 @@
+.antdMenuSideBar{
+    min-height: 100vh !important;
+}
+
+.toggleBtnDiv {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 1rem;
+}
+
+.mainPageDiv {
+    flex: 1;
+    transition: margin-left 0.3s ease;
+}
+.topNavBarDiv ul,
+.topNavBarDiv {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0.4rem 0;
+}
+
+
+.unhoverableElement {
+    pointer-events: none !important;
+}
+
+.logoutSpan{
+    color: #ff0000 !important;
+}
+
+
+.topHeaderStoreManagementFullWidth {
+    width: 100%;
+    transition: width 0.3s ease !important;
+}
+
+.fullWidthElement {
+    width: 100% !important;
+}
+
+.topHeadersCard {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+    width: 100%;
+    transition: width 0.3s ease !important;
+
+}
+
+
+
+.collapseBtn {
+    background-color: #7BC558 !important;
+    outline: none !important;
+    box-shadow: none !important;
+    margin: 1rem 0 !important;
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.collapseBtn:hover {
+    background-color: #7BC558 !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #7BC558 !important;
+}
+
+.collapseBtnIcon{
+    color: white !important;
+    transform: scale(1.2) !important;
+}
+
+.sideBarMenu {
+    min-height: 93vh !important;
+}
+
+.centerElementRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.selectStoresOptions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 1rem 1rem;
+}
+
+
+.selectNoResultFound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0 !important;
+    height: 100%;
+}
+.selectNoResultFound p{
+    font-weight: 500 !important;
+    font-size: 1rem !important;
+    margin: 0 3px !important;
+}
+
+.searchSelectIcon{
+    color: #2E3138 !important;
+    font-size: 1.3rem !important;
+    pointer-events: none !important;
+    font-weight: 800 !important;
+}
+
+
+.updateStoreArrayBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.updateStoreArrayBtn:hover,
+.updateStoreArrayBtn:focus{
+    background-color: #EBB3E6 !important;
+    color: white !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #EBB3E6 !important;
+}
+
+
+.deleteStoreArrayBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.deleteStoreArrayBtn:hover,
+.deleteStoreArrayBtn:focus{
+    background-color: #FF5555 !important;
+    color: white !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #FF5555 !important;
+}
+
+
+
+
+.emptyTableTextDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.emptyTableTextDiv span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+
+.addNewStoreBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px !important;
+    background-color: #ECEF80;
+    color: black !important;
+    padding: 1rem 1.5rem !important;
+}
+
+.addNewStoreBtn:hover{
+    background-color: #ECEF80 !important;
+    color: black !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #ECEF80 !important;
+    opacity: 0.9 !important;
+}
+
+.addNewManagerBtnDiv {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem 0;
+}
+
+.addNewManagerBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px !important;
+    background-color: #42B2FF;
+    color: white !important;
+}
+
+.addNewManagerBtn:hover,
+.addNewManagerBtn:focus{
+    background-color: #42B2FF !important;
+    color: white !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #42B2FF !important;
+    opacity: 0.9 !important;
+}
+
+.resetPasswordArrayBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.resetPasswordArrayBtn:hover,
+.resetPasswordArrayBtn:focus{
+    background-color: #7BC558 !important;
+    color: white !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #7BC558 !important;
+    opacity: 0.9 !important;
+}
+
+.lastnameColProfileManagement,
+.firstnameColProfileManagement{
+    max-width: 150px !important;
+}
+
+.genderColProfileManagement{
+    width: 10px !important;
+}
+
+.topHeaderProfileManagementTitle{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.logoutTopNavBarItem,
+.profileTopNavBarItem{
+   min-width: 10rem !important;
+}
+
+.logoutTopNavBarItem:hover span{
+    font-weight: 600 !important;
+}
+.logoutTopNavBarItem:hover svg{
+    transform: scale(1.2) !important;
+}
+.profileTopNavBarItem:hover span{
+    font-weight: 500 !important;
+}
+
+.mainContent {
+    transition: margin-left 0.3s ease;
+}
+
+.loadingDashboardFullPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loadingDashboardFullPage span {
+    font-size: 2.8rem !important;
+}
+
+.loadingDashboardFullPage i {
+    background-color: #87BE4B !important;
+    width: 1.3rem !important;
+    height: 1.3rem !important;
+}
+
+.wheelGameDiv {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    flex-direction: column !important;
+    z-index: 99 !important;
+    position: relative;
+    cursor: pointer !important;
+}
+
+
+.homePageContentTopHeader {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 1rem 0;
+    width: 100%;
+}
+.gameMain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+
+.gameMainDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+
+.homePageContent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 2rem;
+    width: 100%;
+}
+
+.spinWheelBtn {
+    z-index: -1 !important;
+    position: absolute !important;
+    bottom: 30rem !important;
+    right: 34rem !important;
+    width: 15rem !important;
+    //font-size: 2rem;
+    height: 5rem;
+    text-align: center;
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    cursor: pointer !important;
+    background-color: #2D2F2C;
+    color: white !important;
+    border-radius: 1rem;
+    flex-direction: row !important;
+
+}
+
+.spinWheelBtn:hover {
+    opacity: 0.9 !important;
+    cursor: pointer !important;
+}
+
+.spinWheelInput {
+    position: fixed !important;
+    bottom: 1% !important;
+    z-index: 99999 !important;
+    left: 18% !important;
+    width: 20rem !important;
+    font-size: 2rem;
+    height: 5rem;
+    text-align: center;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    cursor: pointer;
+}
+
+.gameComponentDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    position: relative;
+
+}
+
+.disabledWheel {
+    pointer-events: none !important;
+    opacity: 0.3 !important;
+}
+
+
+.disabledWheelBtn {
+    pointer-events: none !important;
+    opacity: 0 !important;
+}
+
+.spinWheelLock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 35rem !important;
+    height: 30rem !important;
+}
+
+.spinWheelLock:hover {
+    transform: scale(1.01,1.01) !important;
+    cursor: pointer !important;
+}
+
+
+.spinWheelTitle {
+    margin: 4rem 0 0 0 !important;
+    color: #FF5555;
+    font-size: 1.2rem;
+    font-weight:bold !important;
+}
+
+
+
+.modalWithGifImage {
+    z-index: 1 !important;
+}
+
+.gifImage {
+    position: absolute !important;
+    width: 24rem !important;
+    height: 14rem !important;
+    top: 20rem !important;
+    left: 0 !important;
+    z-index: 0 !important;
+}
+
+.ticketCardIconsPrize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.ticketCardIconsPrize img {
+    width: 9rem;
+    height: 9rem;
+    margin: 0.5rem 0;
+
+}
+
+
+.ticketCardElement {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 2px 3px 18px 13px rgba(243, 243, 243, 0.62);
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    min-width: 30rem !important;
+    min-height: 20rem !important;
+}
+
+.ticketCardElement .cardTitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    color: black !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ticketCardElement .counter {
+    color: black;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.ticketCardBody {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.ticketCardText {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-weight: bold;
+}
+.ticketCardText p {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0;
+    text-transform: capitalize;
+
+}
+
+.prizeCardText  {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    text-transform: capitalize;
+
+}
+.ticketCardIconsPrize {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.ticketCardIconsPrize img {
+    width: 12rem;
+    height: 12rem;
+    margin: 0;
+}
+
+
+.prizesTag {
+    position: absolute;
+    top: 0 !important;
+    left: 0 !important;
+    margin: 0;
+
+}
+
+
+.prizesTag span {
+    padding: 0.3rem .73rem !important;
+    margin: 0;
+}
+
+
+.firstPrize span {
+    background-color: #3D3633;
+    border-color: #3D3633;
+    color: white;
+    overflow: hidden;
+}
+
+.secondPrize span {
+    background-color: #7BC558;
+    border-color: #7BC558;
+    color: white;
+    overflow: hidden;
+}
+
+.thirdPrize span {
+    background-color: #E8B14A;
+    border-color: #E8B14A;
+    color: white;
+    overflow: hidden;
+}
+
+.fourthPrize span {
+    background-color: #42B2FF;
+    border-color: #42B2FF;
+    color: white;
+    overflow: hidden;
+}
+
+.fifthPrize span {
+    background-color: #EBB3E6;
+    border-color: #EBB3E6;
+    color: white;
+    overflow: hidden;
+}
+
+.giftBox {
+    position: absolute !important;
+    top: 20rem !important;
+    left: 7rem !important;
+    width: 100% !important;
+}
+
+
+.prizeLabel {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    margin: 0 !important;
+    width: 100% !important;
+    font-weight: bold;
+    font-size: .7rem;
+    letter-spacing: 0.09rem;
+    color: #5b5e64;
+}
+
+.emoji {
+    position: absolute;
+    width: 4rem !important;
+    height: 4rem !important;
+}
+
+.congEmoji {
+    left: 2rem !important;
+    top: 4rem;
+}
+
+.balloonEmoji {
+    right: 2rem !important;
+    width: 6rem !important;
+    height: 6rem !important;
+}
+
+.floatTable div {
+    position: absolute;
+    top: 0;
+    right: 1.4rem;
+    width: 50%;
+    height: 100% !important;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prizesCardsDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.historyGainTable {
+    width: 100%;
+    height: 100% !important;
+}
+
+.wheelDiv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+}
+
+.wheelDiv div {
+    max-height: 516px !important;
+    max-width: 516px !important;
+    cursor: pointer !important;
+    pointer-events: visible !important;
+
+
+}
+
+.spinButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 4rem 0 !important;
+    font-size: 1.3rem;
+    padding: 2rem 4rem !important;
+}
+
+.spinButton:hover {
+    opacity: 0.9 !important;
+    cursor: pointer !important;
+    font-size: 1.34rem;
+    padding: 2rem 4.1rem !important;
+}
+
+.gameInstructions {
+    box-shadow: 2px 3px 18px 13px rgba(246, 246, 246, 0.62);
+    width: 60% !important;
+    padding: 2rem;
+    border-radius: 1rem !important;
+}
+
+.gameInstructions h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    background-color: white;
+    color: #42B2FF;
+    width: 100%;
+    padding: 1rem 0rem !important;
+    text-align: left !important;
+}
+
+
+.gameInstructions h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    background-color: white;
+    color: #7BC558;
+    width: 100%;
+    padding: 1rem 2rem !important;
+    text-align: center !important;
+}
+
+.gameInstructions h6 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+
+.gameInstructions ul li {
+    list-style-type: none !important;
+    font-size: 1.0rem;
+}
+
+.wheelGamePrizesImgDiv {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.wheelGamePrizesImg {
+    width: 10rem;
+    height: 7rem;
+    margin: 0.5rem 0;
+    margin-right: 2rem !important;
+}
+
+
+.tryMeBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    background-color: #EBB3E6 !important;
+    border-color: #EBB3E6 !important;
+    color: white !important;
+}
+
+.tryMeBtn:hover,
+.tryMeBtn:focus{
+    background-color: #EBB3E6 !important;
+    color: white !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #EBB3E6 !important;
+}
+
+.badgesListDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.badgeCardElement {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 2px 3px 18px 13px rgba(243, 243, 243, 0.62);
+    padding: 7px;
+    margin: 1rem 0;
+    text-align: center;
+    width: 100% !important;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.badgeCardBody {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+.badgeLevelCardIcons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.badgeLevelCardIcons img {
+    width: 3rem;
+    height: 3rem;
+    margin: 0;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+
+
+.badgeLabelText {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    margin: 0 !important;
+    width: 100% !important;
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 0.09rem;
+    color: #5b5e64;
+}
+
+.badgeDescriptionLabelText {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    margin: 0 !important;
+    width: 100% !important;
+    font-weight: bold;
+    font-size: 0.75rem;
+    letter-spacing: 0.09rem;
+    color: #5b5e64;
+    margin-top: 1rem !important;
+}
+
+.sideBarDiv {
+    border-right: #eeeeee 1px solid !important;
+}
+

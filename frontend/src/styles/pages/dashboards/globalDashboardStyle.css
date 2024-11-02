@@ -1,0 +1,599 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+.sideBarMenuDashboards .ant-menu-submenu span,
+.sideBarMenuDashboards .ant-menu-item span {
+    color: #1c1a1a !important;
+    font-size: 0.9rem;
+    font-weight: 500;
+
+}
+
+.ant-menu-light .ant-menu-item-selected,
+.ant-menu-light > .ant-menu .ant-menu-item-selected {
+    background: #f1f1f1 !important;
+    border-radius: 0 !important;
+}
+
+.ant-menu-light .ant-menu-item-selected .ant-menu-submenu-title{
+    background: #f1f1f1 !important;
+    border-left: .3rem solid #7BC558 !important;
+    border-radius: 0 !important;
+}
+
+.ant-menu-item.ant-menu-item-selected:first-of-type {
+    border-left: .3rem solid #7BC558 !important;
+}
+
+.ant-menu .ant-menu-sub .ant-menu-item-selected {
+    border: none !important;
+}
+
+.ant-menu-light .ant-menu-item-selected span:not(.logoutLink) ,
+.ant-menu-light > .ant-menu .ant-menu-item-selected span:not(.logoutLink),
+.sideBarMenuDashboards .ant-menu-submenu-selected .ant-menu-item-icon .ant-menu-submenu-arrow::before {
+
+    color: #7BC558 !important;
+}
+
+.sideBarMenuDashboards .ant-menu-submenu-selected:not(.ant-menu-submenu-inline) .ant-menu-item-icon svg {
+    color: #7BC558 !important;
+
+}
+
+.sideBarMenuDashboards .ant-menu-item:not(.ant-menu-item-selected) .ant-menu-item-icon svg {
+    color: #1f1e1e !important;
+
+}
+
+.sideBarMenuDashboards svg {
+    font-size: 1.2rem !important;
+}
+
+
+
+.sideBarMenuDashboards .ant-menu-item,
+.sideBarMenuDashboards .ant-menu-submenu-title{
+    margin: 0 !important;
+}
+
+.sideBarMenuDashboards .ant-menu-submenu div  {
+    color: #1c1a1a !important;
+    border: none !important;
+}
+.sideBarMenuDashboards .ant-menu-submenu div span ,
+.sideBarMenuDashboards .ant-menu-submenu div i::before,
+.sideBarMenuDashboards .ant-menu-submenu div i::after{
+    color: #1c1a1a !important;
+}
+.sideBarMenuDashboards .ant-menu-submenu-selected div span ,
+.sideBarMenuDashboards .ant-menu-submenu-selected div i::before,
+.sideBarMenuDashboards .ant-menu-submenu-selected div i::after{
+    color: #7BC558 !important;
+}
+
+.sideBarMenuDashboards .ant-menu-submenu-selected div  {
+    border-left: .3rem solid #7BC558 !important;
+    border-radius: 0 !important;
+}
+
+.sideBarMenuDashboards .ant-menu-submenu div,
+.ant-menu-item{
+    border-radius: 2px !important;
+}
+
+
+.storeManageList .dashboardStoresSelect .ant-select-selector,
+.storeManageList .dashboardStoresSelect .ant-select-selection-search-input{
+    height: 50px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+
+.storeManageList .ant-select-dropdown .ant-select-item-option:not(.ant-select-item-option-disabled) {
+    background: #ffffff !important;
+    color: black;
+    padding: 1.5rem;
+}
+
+.storeManageList .ant-select-dropdown .ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+    background: #f3f3f3 !important;
+    color: black;
+}
+
+
+.dashboardStoresSelect .ant-select-focused:not(.ant-select-disabled).ant-select .ant-select-selector,
+.dashboardStoresSelect .ant-select:hover .ant-select-selector,
+.ant-select .ant-select-selector{
+    border : 1px solid #dedede !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.ant-select-dropdown .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+    background: #f1f1f1 !important;
+    color: black;
+}
+
+
+.dashboardStoresSelect .ant-select-arrow {
+    color: #2E3138 !important;
+    font-weight: bold;
+    font-size: 1.1rem !important;
+}
+
+/*storeAddUpdateModal*/
+.ant-modal-footer .ant-btn-primary {
+    background-color: #87BE4B !important;
+    color: white;
+}
+.ant-modal-footer .ant-btn-primary:hover,
+.ant-modal-footer .ant-btn-primary:focus{
+    background-color: #87BE4B !important;
+    color: white;
+    opacity: 0.9 !important;
+    border: 1px solid #87BE4B !important;
+}
+
+/*storeAddUpdateModal*/
+.ant-modal-footer .ant-btn-default {
+    background-color: #2E3138 !important;
+    color: white;
+}
+.ant-modal-footer .ant-btn-default:hover,
+.ant-modal-footer .ant-btn-default:focus{
+    opacity: 0.9 !important;
+    background-color: #2E3138 !important;
+    color: white !important;
+    border-color: #2E3138 !important;
+}
+
+/*storeAddUpdateModal*/
+ .ant-modal-header {
+    margin-bottom: 2rem !important;
+    text-align: center !important;
+}
+
+.ant-modal-header .ant-modal-title {
+    font-size: 1.2rem !important;
+    font-weight: bold !important;
+    color: #2E3138 !important;
+}
+
+.ant-input-affix-wrapper,
+.ant-input-affix-wrapper:hover,
+.ant-input-affix-wrapper:focus,
+.ant-picker{
+    border: 1px solid #dedede !important;
+    border-radius: 5px !important;
+}
+
+.ant-form-item-label > label {
+    color: #2E3138 !important;
+    font-weight: bold !important;
+    width: 100% !important;
+}
+
+.ant-form-item-control-input-content{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.ant-tabs-nav-wrap,
+.ant-tabs-nav-list,
+.ant-tabs-tab{
+    width: 100% !important;
+    text-align: center;
+    justify-content: center !important;
+}
+
+
+.ant-tabs-tab-active{
+color: black !important;
+}
+
+.ant-tabs-ink-bar {
+background: #7c7c7c !important;
+}
+
+.ant-tabs-tab-active .ant-tabs-tab-btn,
+.ant-tabs-tab:hover .ant-tabs-tab-btn{
+    color: black !important;
+    font-weight: bold !important;
+}
+
+.ant-btn-primary{
+    background-color: #313638 !important;
+    color: white !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.saveFormEmailTemplateBtnGlobal{
+    background-color: #313638 !important;
+    color: white !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+
+.ant-btn-primary:hover{
+    opacity: 0.9 !important;
+}
+
+.ant-btn-link span {
+    color: #2D7DD2 !important;
+    font-weight: 500 !important;
+}
+.ant-btn-link span:hover {
+ opacity: 0.9 !important;
+}
+
+.ant-dropdown-menu-item {
+    border-right: 0 !important;
+    margin: 0.3rem 0 !important;
+}
+.ant-dropdown-menu-item-selected {
+    background-color: #f1f1f1 !important;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+    background-color: #7BC558 !important;
+    border-color: #7BC558 !important;
+}
+
+ .ant-table-filter-trigger.active svg {
+    color: #2D7DD2 !important;
+}
+
+ .ant-table-column-sorter-down.active,
+    .ant-table-column-sorter-up.active{
+     color: #2D7DD2 !important;
+ }
+
+.ant-row,
+.ant-col,
+.ant-card {
+ transition: width 0.3s ease !important;
+}
+
+.ant-menu-item:after,
+.ant-menu-item-active:after,
+.ant-menu-item-only-child.ant-menu-item-active:after {
+    border-bottom-color: transparent !important;
+    border: none !important;
+}
+
+.ant-table-filter-dropdown .ant-dropdown-menu-title-content {
+    display: flex !important;
+}
+
+
+.ant-picker-range .ant-picker-active-bar {
+    background: #7BC558 !important;
+    height: .1rem !important;
+    width: 12rem !important;
+    margin: 0 !important;
+    border-radius: 50%;
+}
+
+.ant-picker-range {
+    border-color: #dedede;
+}
+
+.ant-picker-range .anticon-swap-right,
+.ant-picker-range .ant-picker-suffix{
+    font-size: 1.1rem !important;
+    color: #000 !important;
+}
+
+.ant-table-thead .ant-table-cell {
+    padding: 1rem 0.5rem !important;
+    background-color: #BFE5FF !important;
+    border: none !important;
+    font-size: .8rem !important;
+    text-align: center !important;
+    color: black !important;
+    border-right: 0.01rem solid #ffffff !important
+}
+
+.ant-table-thead .ant-table-cell::before {
+    background-color: transparent !important;
+}
+
+.ant-table-row .ant-table-cell {
+    text-align: center !important;
+}
+.ant-table-row:hover .ant-table-cell {
+    background-color: #ffffff !important;
+}
+
+.ant-tag-green , .ant-tag-red  {
+    font-size: .8rem !important;
+    padding: .2rem .7rem;
+}
+
+.ant-input,
+.ant-input:hover,
+.ant-input:focus,
+.ant-picker:focus,
+.ant-picker:hover,
+.ant-picker.ant-picker-focused {
+    border-color: #dedede !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.ant-dropdown-trigger {
+    margin-right: .5rem !important;
+}
+
+
+.ant-dropdown-trigger svg {
+    color: #9a9a9a !important;
+}
+
+.ant-dropdown-trigger.active svg {
+    color: black !important;
+}
+
+
+.ant-table-column-sorter-down svg,
+.ant-table-column-sorter-up svg {
+    color: #9a9a9a !important;
+}
+.ant-table-column-sorter-down.active svg,
+.ant-table-column-sorter-up.active svg {
+    color: black !important;
+}
+
+.searchTicketForm .ant-row ,
+.searchTicketFormItem .ant-row,
+.searchTicketFormItem .ant-col,
+.searchTicketForm .ant-col,
+.searchTicketForm .ant-form-item-control-input,
+.searchTicketFormItem .ant-form-item-control-input,
+.searchTicketForm .ant-form-item-control-input-content,
+.searchTicketFormItem .ant-form-item-control-input-content{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: flex-start;
+    align-items: self-start;
+    width: 100% !important;
+}
+
+.tableClientManagement {
+
+}
+
+.ant-pagination-item-active {
+    border-color: #87BE4B !important;
+}
+
+
+.infoHistoryCard .ant-card-body {
+    display: flex;
+    font-size: .6rem !important;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    color: #151414;
+}
+
+.infoHistoryCard .ant-card-head {
+    border-color: #e3e2e2 !important;
+}
+
+.infoHistoryCard .ant-card-head .ant-card-head-wrapper .ant-card-head-title span {
+    font-size: 1.2rem !important;
+    font-weight: bold;
+    color: #151414;
+}
+.infoHistoryCard .ant-card-head .ant-card-head-wrapper .ant-card-head-title span span {
+    font-size: 1.5rem !important;
+    font-weight: bold;
+    color: #000000;
+}
+
+.logoutLink.ant-menu-item-selected {
+    background-color: transparent !important;
+    background: transparent !important;
+}
+
+.detailsModalGain .ant-modal-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+    width: 100%;
+    align-items: end;
+    align-content: stretch;
+    justify-content: start;
+    justify-items: stretch;
+}
+
+.mainSpinnerDashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(238, 238, 238, 0.47);
+    position: fixed;
+    z-index: 99999;
+    cursor: wait;
+}
+
+
+.mainSpinnerDashboard .ant-spin-dot-item{
+    height: 1.6rem !important;
+    width: 1.6rem !important;
+    background-color: #7BC558;
+}
+
+.mainSpinnerDashboard .ant-spin-dot.ant-spin-dot-spin {
+    height: 4rem !important;
+    width: 4rem !important;
+}
+
+
+.periodsSelectorInput .ant-radio-checked .ant-radio-inner {
+    border-color: #7BC558 !important;
+    background-color: #7BC558 !important;
+    height: 1.2rem !important;
+    width: 1.2rem !important;
+}
+
+.periodsSelectorInput:hover .ant-radio-inner {
+    border-color: #7BC558 !important;
+}
+
+.periodsSelectorInput span {
+    font-size: 1.1rem !important;
+    font-weight: 500 !important;
+}
+
+
+
+.correspandancesTabsAux .ant-tabs-nav {
+    width: 100% !important;
+}
+
+.correspandancesTabsAux .ant-tabs-content-holder {
+    width: 100% !important;
+    text-align: center !important;
+    justify-content: center !important;
+    margin: 1rem 0;
+
+}
+
+
+.servicesTable .ant-table-cell{
+    text-align: left !important;
+    padding: 1rem 0.5rem !important;
+    padding-left: 3rem !important;
+}
+
+.content_template_editor,
+.subject_template_editor {
+    position: relative;
+}
+.content_template_editor .ck-editor__editable {
+    min-height: 35rem;
+}
+
+.subject_template_editor .ck-editor__editable {
+    min-height: 5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ant-form-item-explain-connected {
+    text-align: left !important;
+    padding: .3rem 2rem 1rem 0 !important;
+}
+
+.ant-modal-confirm-btns{
+    display: flex;
+    justify-content: flex-end !important;
+}
+
+.variable_tag {
+    font-weight: 500 !important;
+    font-size: 1rem !important;
+}
+
+.variable_tag:hover {
+    transform: scale(1.1) !important;
+    cursor: pointer !important;
+}
+
+.autoCompletCkEditor {
+    position: absolute;
+    align-items: center;
+    width: 25% !important;
+    height: 2rem !important;
+    top: .3rem;
+    right: 1rem;
+}
+
+.ck.ck-editor__editable_inline>:first-child {
+    margin-top: 0 !important;
+}
+
+.ck-editor__editable p {
+    margin: 0 !important;
+}
+
+.correspandancesTabsAux .ant-select-selector {
+    text-align: left !important;
+}
+
+.content_template_editor {
+    position: relative;
+}
+.subject_template_editor {
+    position: relative;
+}
+
+.variable-text-editor {
+    color: #1da1f2 !important;
+}
+
+.content_template_editor .ck-content {
+    padding: 2rem !important;
+}
+
+.ck-content p {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: .9rem !important;
+    line-height: 2.5rem !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.05rem !important;
+}
+
+.ck-content strong {
+    font-weight: 900 !important;
+    font-size: 1rem !important;
+}
+
+.profileTags .ant-tag,
+.profileTags .ant-btn {
+    padding: 0.3rem 1rem !important;
+}
+
+
+.disableAccountBtn {
+    background-color: #42B2FF !important;
+    color: white !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #42B2FF !important;
+}
+.deleteAccountBtn {
+    background-color: #FF5555 !important;
+    color: white !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #FF5555 !important;
+}
+
+
+.ant-spin-dot-item{
+    background-color: #7BC558 !important;
+}

@@ -1,0 +1,177 @@
+
+
+.navbar {
+    /*position: fixed !important;*/
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    background-color: var( --navbar-bg) !important;
+    z-index: 1000 !important;
+    padding: 0 !important;
+    padding-right: 1rem !important;
+    padding-bottom: 0.9rem !important;
+    transition: background-color 0.3s ease !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
+
+}
+
+.containerNavbar{
+    margin: 0!important;
+    padding: 0 !important;
+    width: 100% !important;
+}
+
+@media screen and (max-width: 768px) {
+    .containerNavbar{
+        margin: .8rem !important;
+    }
+}
+
+.navLink{
+    color: var(--navbar-link-text-color) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-size: 1.03rem !important;
+    background-color: var(--navbar-link-bg-color) ;
+    font-weight: 500 !important;
+    margin: 0 0.9rem !important;
+}
+
+@media screen and (max-width: 768px) {
+    .navLink{
+        font-size: 0.5rem !important;
+    }
+}
+
+
+.navLink:hover{
+    color: var(--navbar-link-text-color-hover) !important;
+    transition: background-color 0.3s ease !important;
+}
+
+
+.navbarBrand{
+    margin: 0 10rem;
+}
+.logoTipTopNavBar {
+    float: left;
+    width: 16rem;
+    height: 4rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .logoTipTopNavBar {
+        width: 10rem;
+        height: 3rem;
+        left: 0;
+    }
+}
+
+.rightDivNavBar{
+    /* color: var(--navbar-link-text-color) !important; */
+    position: relative;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    /* font-size: 1.1rem !important; */
+    /* background-color: var(--navbar-link-bg-color) ; */
+    padding-left: 0 !important;
+    
+
+}
+
+
+
+.navLinkStoreBtnDashboard {
+    background-color: #2D2F2C !important;
+    color: white !important;
+    border: 1px solid #2D2F2C !important;
+    border-radius: 50px !important;
+    padding: 7px 15px !important;
+    font-size: .9rem !important;
+
+    margin: 0 .4rem !important;
+
+}
+
+.navLinkStoreBtnDashboard:hover {
+    background-color: #2D2F2C !important;
+    border: 1px solid #2D2F2C !important;
+    color: white !important;
+    opacity: 0.9 !important;
+}
+
+
+
+.navLinkStoreBtnSignOut {
+    background-color: #FF5555 !important;
+    color: white !important;
+    border: 1px solid #FF5555 !important;
+    border-radius: 50px !important;
+    padding: 7px 15px !important;
+    font-size: .9rem !important;
+    margin: 0 !important;
+
+}
+
+.navLinkStoreBtnSignOut:hover {
+    background-color: #FF5555 !important;
+    border: 1px solid #FF5555 !important;
+    color: white !important;
+    opacity: 0.9 !important;
+}
+
+.navLinkStoreBtn {
+    background-color: rgb(255, 255, 255) !important;
+    color: var(--navbar-link-text-color-hover) !important;
+    border: 1px solid var(--navbar-actions-bg) !important;
+    border-radius: 50px !important;
+    padding: 7px 15px !important;
+
+}
+
+.navLinkStoreBtn:hover {
+    background-color: #f2ffe5 !important;
+    border: 1px solid var(--navbar-actions-bg) !important;
+
+}
+.navLinkPlayBtn {
+    background-color: var(--green) !important;
+    border: 1px solid var(--navbar-actions-bg) !important;
+    margin: 0 25px;
+    padding: 7px 25px !important;
+    border-radius: 50px !important;
+    color: white !important;
+    display: flex !important;
+}
+
+.navLinkPlayBtn:hover {
+    background-color: var(--green) !important;
+    color: white !important;
+    opacity: 0.9 !important;
+}
+
+
+
+
+.navLinkPlayBtn .anticon {
+    font-size: 3rem !important;
+    font-weight: bold !important;
+    
+  }
+
+.navLinkStoreBtn .anticon {
+    font-size: 3rem !important;
+    font-weight: bold !important;
+    
+  }
+
+.linksDivNavBar {
+    padding-left: 1rem !important;
+}
+
+
+
+

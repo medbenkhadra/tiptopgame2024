@@ -1,0 +1,449 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+
+#authentification routes
+api_login_check_client:
+    path: /api/login_check_client
+    controller: App\Controller\Api\User\UserAuthController::checkLoginClient
+
+api_login_check_admin:
+    path: /api/login_check_admin
+    controller: App\Controller\Api\User\UserAuthController::checkLoginAdmin
+
+oauth_google_callback:
+    path: /api/oauth/google/callback
+    controller: App\Controller\Api\User\UserSocialMediaAuthController::googleCallback
+
+
+api_register:
+    path: /api/register
+    controller: App\Controller\Api\User\UserAuthController::register
+
+logout:
+    path: /api/logout
+    controller: App\Controller\Api\User\UserAuthController::logout
+
+
+reset_password_request:
+    path: /api/reset_password_request
+    controller: App\Controller\Api\User\UserAuthController::resetPasswordRequest
+    methods: POST
+
+
+#stores routes
+get_stores_admin:
+    path: /api/admin/stores
+    controller: App\Controller\Api\Store\StoreController::getStoresForAdmin
+    methods: GET
+
+get_store_by_id:
+    path: /api/store/{id}
+    controller: App\Controller\Api\Store\StoreController::getStoreById
+    methods: GET
+
+admin_add_new_store:
+    path: /api/admin/store/add
+    controller: App\Controller\Api\Store\StoreController::addNewStoreByAdmin
+    methods: POST
+
+update_store_by_id:
+    path: /api/admin/store/update/{id}
+    controller: App\Controller\Api\Store\StoreController::updateStoreByIdForAdmin
+    methods: POST
+
+delete_store_by_id:
+    path: /api/admin/store/delete/{id}
+    controller: App\Controller\Api\Store\StoreController::deleteStoreById
+    methods: DELETE
+
+
+get_stores_for_client:
+    path: /api/client/stores
+    controller: App\Controller\Api\Store\StoreController::getStoresForClient
+    methods: GET
+    defaults:
+        page: 1
+        options:
+            parameters:
+                page:
+                    name: page
+                    in: query
+                    required: false
+
+associate_client_to_store:
+    path: /api/client/store/associate
+    controller: App\Controller\Api\Store\StoreController::associateClientToStore
+    methods: POST
+
+#store's users routes
+get_store_users:
+    path: /api/admin/store/{id}/users
+    controller: App\Controller\Api\Store\StoreUserController::getStoreUsersForAdmin
+    methods: GET
+
+get_store_users_by_role:
+    path: /api/store/{id}/users
+    controller: App\Controller\Api\Store\StoreUserController::getStoreUsersByRole
+    methods: POST
+
+add_new_user_to_store:
+    path: /api/store/{id}/user/add
+    controller: App\Controller\Api\Store\StoreUserController::addNewUserToStore
+    methods: POST
+
+#getUserProdileById
+get_user_profile_by_id:
+    path: /api/user/{id}
+    controller: App\Controller\Api\User\UserController::getUserProfileById
+    methods: GET
+
+#getUserPersonalInfoById
+get_user_personal_info_by_id:
+    path: /api/user/{id}/personal_info
+    controller: App\Controller\Api\User\UserController::getUserPersonalInfoById
+    methods: GET
+
+#updateUserProfileById
+update_user_profile_by_id:
+    path: /api/user/{id}/update
+    controller: App\Controller\Api\User\UserController::updateUserProfileById
+    methods: POST
+
+#getTickes
+get_tickets:
+    path: /api/tickets
+    controller: App\Controller\Api\Ticket\TicketController::getTickets
+    methods: GET|POST
+
+get_pending_tickets:
+    path: /api/tickets/pending
+    controller: App\Controller\Api\Ticket\TicketController::getPendingTickets
+    methods: GET
+
+#getTicketByCode
+get_ticket_by_code:
+    path: /api/ticket/{code}
+    controller: App\Controller\Api\Ticket\TicketController::getTicketByCode
+    methods: GET
+    requirements:
+        code: .+
+
+#getAllPrizes
+get_all_prizes:
+    path: /api/prizes
+    controller: App\Controller\Api\Prize\PrizeController::getAllPrizes
+    methods: GET
+
+#getClients
+get_clients:
+    path: /api/admin/clients
+    controller: App\Controller\Api\User\UserController::getClients
+    methods: GET
+
+
+get_participants:
+    path: /api/admin/participants
+    controller: App\Controller\Api\User\UserController::getParticipants
+    methods: GET
+
+get_participants_list:
+    path: /api/participants
+    controller: App\Controller\Api\User\UserController::getParticipantsList
+    methods: GET
+
+#tickets/check/play
+check_ticket_play:
+    path: /api/tickets/check/play
+    controller: App\Controller\Api\Ticket\TicketController::checkTicketForPlay
+    methods: POST
+
+
+get_storemanager_store:
+    path: /api/storemanager/{id}/store
+    controller: App\Controller\Api\Store\StoreController::getStoreForStoreManager
+    methods: GET
+    requirements:
+        id: \d+
+
+#print_ticket by employee
+print_ticket_by_employee:
+    path: /api/print_ticket
+    controller: App\Controller\Api\Ticket\TicketController::printTicketByEmployee
+    methods: POST
+
+
+#print random ticket
+print_random_ticket:
+    path: /api/print_random_ticket
+    controller: App\Controller\Api\Ticket\TicketController::printRandomTicket
+    methods: GET
+
+
+#get_store_clients
+get_store_clients:
+    path: /api/store/{id}/clients
+    controller: App\Controller\Api\User\UserController::getStoreClients
+    methods: GET
+    requirements:
+        id: \d+
+
+#confirm_ticket_play
+confirm_ticket_play:
+    path: /api/ticket/confirm/play
+    controller: App\Controller\Api\Ticket\TicketController::confirmTicketPlay
+    methods: POST
+
+
+confirm_ticket_gain:
+    path: /api/ticket/confirm/gain
+    controller: App\Controller\Api\Ticket\TicketController::confirmTicketGain
+    methods: POST
+
+
+
+#employees_list
+get_employees_list:
+    path: /api/employees
+    controller: App\Controller\Api\User\UserController::getEmployeesList
+    methods: GET
+    requirements:
+        id: \d+
+
+#winner_tickets
+get_winner_tickets:
+    path: /api/winner_tickets
+    controller: App\Controller\Api\Ticket\TicketController::getWinnerTickets
+    methods: GET
+
+#winner_tickets_history
+get_winner_tickets_history:
+    path: /api/winner_tickets/history
+    controller: App\Controller\Api\Ticket\TicketController::getWinnerTicketsHistory
+    methods: GET
+
+
+#client_dashboard_counters
+get_client_dashboard_counters:
+    path: /api/client/dashboard/counters
+    controller: App\Controller\Api\Dashboard\DashboardController::getClientDashboardCounters
+    methods: GET
+
+
+#admin_dashboard_counters
+get_admin_dashboard_counters:
+    path: /api/admin/dashboard/counters
+    controller: App\Controller\Api\Dashboard\DashboardController::getAdminDashboardCounters
+    methods: POST
+
+#dashaboardStats
+get_dashboard_stats:
+    path: /api/dashboard/stats
+    controller: App\Controller\Api\Dashboard\DashboardController::getDashboardStats
+    methods: GET
+
+
+#EmailTemplates
+get_email_templates:
+    path: /api/admin/correspondence_templates
+    controller: App\Controller\Api\EmailTemplate\EmailTemplateController::getEmailTemplates
+    methods: GET
+
+#delete
+delete_email_template_by_id:
+    path: /api/admin/correspondence_template/delete/{id}
+    controller: App\Controller\Api\EmailTemplate\EmailTemplateController::deleteTemplate
+    methods: DELETE
+    requirements:
+        id: \d+
+
+create_email_template:
+    path: /api/admin/correspondence_template/create
+    controller: App\Controller\Api\EmailTemplate\EmailTemplateController::createEmailTemplate
+    methods: POST
+
+get_email_template_by_id:
+    path: /api/admin/correspondence_template/{id}
+    controller: App\Controller\Api\EmailTemplate\EmailTemplateController::getEmailTemplateById
+    methods: GET
+    requirements:
+        id: \d+
+
+update_email_template_by_id:
+    path: /api/admin/correspondence_template/{id}/update
+    controller: App\Controller\Api\EmailTemplate\EmailTemplateController::updateEmailTemplateById
+    methods: POST
+    requirements:
+        id: \d+
+
+#EmailServices
+get_email_services:
+    path: /api/admin/correspondence_services
+    controller: App\Controller\Api\EmailService\EmailServiceController::getEmailServices
+    methods: GET
+
+
+#EmailTemplateVariables
+get_email_template_variables:
+    path: /api/admin/correspondence_services/variables
+    controller: App\Controller\Api\EmailTemplateVariable\EmailTemplateVariableController::getEmailTemplateVariables
+    methods: GET
+
+#EmailTemplateVariables
+
+get_email_template_variables_by_service:
+    path: /api/admin/correspondence_services/services/variables
+    controller: App\Controller\Api\EmailTemplateVariable\EmailTemplateVariableController::getEmailTemplateVariablesByService
+    methods: GET
+
+
+#PostManMailer
+send_email:
+    path: /api/admin/correspondence_services/send_email
+    controller: App\Controller\Api\PostManMailer\PostManMailerController::sendEmail
+    methods: POST
+
+#send_activation_email
+send_activation_email:
+    path: /api/user/{id}/send_activation_email
+    controller: App\Controller\Api\PostManMailer\PostManMailerController::sendActivationEmail
+    methods: POST
+    requirements:
+        id: \d+
+
+check_client_activation_token_validity:
+    path: /api/client/check_activation_token_validity
+    controller: App\Controller\Api\PostManMailer\PostManMailerController::checkClientActivationTokenValidity
+    methods: POST
+
+
+#update user profile
+update_user_profile:
+    path: /api/user/{id}/update_profile_info
+    controller: App\Controller\Api\User\UserController::updateUserProfileInfo
+    methods: POST
+    requirements:
+        id: \d+
+
+#update avatar image`
+update_user_avatar:
+    path: /api/user/{id}/update_avatar
+    controller: App\Controller\Api\User\UserController::updateUserAvatar
+    methods: POST
+    requirements:
+        id: \d+
+
+
+#update user password
+update_user_password:
+    path: /api/user/{id}/update_password
+    controller: App\Controller\Api\User\UserController::updateUserPassword
+    methods: POST
+    requirements:
+        id: \d+
+
+#user update email
+update_user_email:
+    path: /api/user/{id}/update_email
+    controller: App\Controller\Api\User\UserController::updateUserEmail
+    methods: POST
+    requirements:
+        id: \d+
+
+
+
+
+## get all badges
+get_all_badges:
+    path: /api/badges
+    controller: App\Controller\Api\Badge\BadgeController::getAllBadges
+    methods: GET
+
+## get badge by id
+get_badge_by_id:
+    path: /api/badge/{id}
+    controller: App\Controller\Api\Badge\BadgeController::getBadgeById
+    methods: GET
+    requirements:
+        id: \d+
+
+#getClientBadges
+get_client_badges:
+    path: /api/client/badges/{id}
+    controller: App\Controller\Api\Badge\BadgeController::getClientBadges
+    methods: GET
+
+
+
+#getUsersList
+get_users_list:
+    path: /api/users
+    controller: App\Controller\Api\User\UserController::getUsers
+    methods: GET
+
+
+#actions_history get all
+get_actions_history:
+    path: /api/actions_history
+    controller: App\Controller\Api\ActionHistory\ActionsHistoryController::getActionsHistory
+    methods: GET
+
+
+#get tickets history
+get_tickets_history:
+    path: /api/tickets_history
+    controller: App\Controller\Api\Ticket\TicketController::getTicketsHistory
+    methods: GET
+
+#get connection history
+get_connection_history:
+    path: /api/connection_history
+    controller: App\Controller\Api\ConnectionHistory\ConnectionHistoryController::getConnectionsHistory
+    methods: GET
+
+#get Emailing history
+get_emailing_history:
+    path: /api/emailing_history
+    controller: App\Controller\Api\EmailingHistory\EmailingHistoryController::getEmailingHistory
+    methods: GET
+
+#get game_config
+get_game_config:
+    path: /api/game_config
+    controller: App\Controller\Api\GameConfig\GameConfigController::getGameConfig
+    methods: GET
+
+#update game_config
+update_game_config:
+    path: /api/game_config/update
+    controller: App\Controller\Api\GameConfig\GameConfigController::updateGameConfig
+    methods: POST
+
+
+save_user_profile:
+    path: /api/user/save_profile
+    controller: App\Controller\Api\User\UserController::saveUserProfile
+    methods: POST
+
+
+#test final draw
+test_final_draw:
+    path: /api/final_draw_test
+    controller: App\Controller\Api\Ticket\TicketController::testFinalDraw
+    methods: GET
+
+
+#test final draw
+final_draw:
+    path: /api/final_draw
+    controller: App\Controller\Api\Ticket\TicketController::realFinalDraw
+    methods: GET
+
+#history final draw
+final_draw_history:
+    path: /api/final_draw/history
+    controller: App\Controller\Api\Ticket\TicketController::finalDrawHistory
+    methods: GET

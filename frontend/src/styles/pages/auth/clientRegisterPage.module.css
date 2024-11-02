@@ -1,0 +1,317 @@
+.loginPageMainDiv{
+min-height: 100vh !important;
+}
+.loginPageMainDivLeftSide{
+
+}
+.loginPageMainDivLeftSide img{
+    width: 100% !important;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .loginPageMainDivLeftSide img{
+        max-height: 30vh !important;
+        min-height: 100% !important;
+    }
+}
+
+.loginPageMainDivRightSide{
+
+}
+
+.loginForm{
+    padding: 0 !important;
+    padding-top: 1% !important;
+}
+
+.loginForm h1{
+    font-size: 1.4rem;
+}
+
+.loginFormTopHeader{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.loginIcon {
+    font-size: 1.3rem;
+    margin: 0 20px;
+    color:  black;
+}
+
+.antdLoginInputs{
+    /* width: 30rem !important; */
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background-color: #191919; 
+  }
+  
+  .divider::before {
+    margin-right: 10px;
+  }
+  
+  .divider::after {
+    margin-left: 10px;
+  }
+  
+  .divider-text {
+    position: relative;
+    font-size: 1rem; 
+    z-index: 1;
+    background-color: #fff; 
+    padding: 0 10px;
+  }
+
+
+  .facebookLoginBtn{
+    background-color: #3b5998 !important;
+    color: white !important;
+    min-height: 50px !important;
+    border-color: transparent !important;
+  }
+
+  .twitterLoginBtn{
+    background-color: #1da1f2 !important;
+    color: white !important;
+    min-height: 50px !important;
+    border-color: transparent !important;
+
+  }
+  .googleLoginBtn{
+    background-color: #ea4335 !important;
+    color: white !important;
+    min-height: 50px !important;
+    border-color: transparent !important;
+  }
+  
+
+  .facebookLoginBtn:hover{
+    border:none !important;
+  }
+
+  .twitterLoginBtn:hover{
+    border:none !important;
+
+  }
+  .googleLoginBtn:hover{
+    border:none !important;
+
+  }
+
+  .facebookLoginBtn:focus{
+    border:none !important;
+  }
+
+  .twitterLoginBtn:focus{
+    border:none !important;
+
+  }
+  .googleLoginBtn:focus{
+    border:none !important;
+
+  }
+
+  .facebookLoginBtn span , .twitterLoginBtn span , .googleLoginBtn span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1.14rem !important;
+    margin-left: 8%;
+
+  }
+
+  .facebookLoginBtn , .twitterLoginBtn , .googleLoginBtn  {
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    max-width: 38rem !important;
+  }
+  .facebookLoginBtn:hover , .twitterLoginBtn:hover , .googleLoginBtn:hover  {
+    opacity: 0.9 !important;
+  }
+
+  .antdLoginInputs{
+    /*margin-bottom: 0.5rem !important;*/
+  }
+
+  .inputsLoginPage{
+    height: 50px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    min-width: 18.8rem;
+    margin-bottom: 0 !important;
+    border-radius: 0 !important;
+  }
+
+
+  .inputsLoginPage:not(:hover):not(.ant-input-affix-wrapper-status-error) , .inputsLoginPage:not(:focus):not(.ant-input-affix-wrapper-status-error) , .inputsLoginPage:not(:active):not(.ant-input-affix-wrapper-status-error) {
+    border: 1px solid var(--black) !important;
+    box-shadow: none !important;
+
+  }
+
+  
+
+  .inputsLoginPage:focus , .inputsLoginPage:hover  , .inputsLoginPage:active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  
+
+  .inputsLoginPageIcons{
+    margin-right: 1rem !important;
+    font-size: 1.2rem!important;
+  }
+
+  .ant-input-password-icon , .eyePasswordIcon{
+    font-size: 1.2rem !important;
+    cursor: pointer !important;
+
+  }
+
+
+  
+
+  .eyePasswordIcon span , .eyePasswordIconRow{
+    cursor: pointer !important;
+  }
+
+  .loginBtnSubmit{
+    height: 50px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1a1a !important ;
+    max-width: 38rem !important;
+    width: 37.5rem !important;
+    color: white !important;
+  }
+
+  @media screen and (max-width: 768px) {
+    .loginBtnSubmit{
+      width: 100% !important;
+    }
+  }
+
+  .loginBtnSubmit:hover,
+  .loginBtnSubmit:disabled{
+   opacity: 0.9;
+    background-color: #1c1a1a !important ;
+    color: white !important;
+
+  }
+
+  .resetPasswordLink {
+    color: var(--black);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .resetPasswordLink:hover {
+    color: var(--green);
+    opacity: 0.9;
+    font-size: 0.91rem;
+
+  }
+
+  
+.resetPasswordIcon{
+    font-size: 1rem;
+}
+
+.loginLogo{
+    padding: 0px 50px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem !important;
+}
+
+.loginLogo img{
+    width: 100% !important;
+    max-width: 550px !important;
+}
+
+.containerLoginFooterLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+  }
+  
+  .linksDivLogin {
+    display: flex !important;
+    justify-content: flex-end !important;
+    width: 100% !important;
+    align-items: center !important;
+    margin: 0 !important;
+  }
+  
+  .linksDivLogin p {
+    margin: 0 !important;
+  }
+  
+  .loginFooterLinksDiv {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+  
+  .navLinkLogin{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+  
+
+
+
+.navLinkLogin:hover{
+    color: var(--navbar-link-text-color-hover) !important;
+    transition: color 0.3s ease !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.leftArrowIcon {
+    font-size: 1.3rem;
+    margin: 0 20px;
+    color:  #7BC558;
+}
+
+.leftArrowIcon:hover{
+    color: #7BC558;
+    opacity: 0.9;
+  font-size: 1.41rem;
+}
+
+.registerForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

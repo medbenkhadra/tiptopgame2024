@@ -1,0 +1,22 @@
+.navbar-toggler {
+  float: right;
+  margin: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-toggler {
+    float: right;
+    margin: .2rem;
+  }
+
+  .ant-space-compact {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .ant-form:not(.ant-form-inline) .ant-form-item {
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+
+}
