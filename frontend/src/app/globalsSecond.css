@@ -394,13 +394,13 @@ body, * {
 }
 
 .timeContainer .wrapper div:first-child{
-  background: #87BE4BFF;
+  background: #D2B48C; /* Brun clair pour les jours */
   color: white !important;
 }
 
 
 .timeContainer .wrapper div:nth-child(2){
-  background: #87BE4BFF;
+  background: #C68642; /* Caramel doux pour les heures */
   color: white !important;
 }
 
@@ -412,13 +412,13 @@ body, * {
 
 
 .timeContainer .wrapper div:nth-child(3){
-  background: #252323;
-  color: #fff !important;
+  background: #8B4513; /* Brun thé foncé pour les minutes */
+  color: white !important;
 }
 
 .timeContainer .wrapper div:last-child{
-  background: #252323;
-  color: #fff !important;
+  background: #FFF5E1; /* Beige doux pour les secondes */
+  color: #333 !important; /* Ajustement du texte pour une meilleure visibilité */
 }
 
 

@@ -5,13 +5,15 @@
   --black : #2E3138;
   --green : #87be4b;
   --navbar-bg : white;
-  --navbar-link-text-color : #000000;
-  --navbar-link-text-color-hover : #87BE4B;
+  --navbar-link-text-color: #4a4a4a; /* gris foncé pour le texte */
+  --navbar-link-text-color-hover: #2d6a4f; /* vert terreux foncé */
   --navbar-link-bg-color : #ffffff;
   --navbar-link-bg-color-hover : #fdfdfd;
   --navbar-actions-bg : #99b64f;
   --navbar-actions-text-color : #ffffff;
+  --green: #6a994e; /* couleur verte douce pour les boutons */
 }
+
 
 @font-face {
   font-family: 'defaultFont';

@@ -13,7 +13,7 @@ import RegisterClientForm from './components/RegisterClientForm';
 import RedirectService from '../../app/service/RedirectService';
 Dayjs.locale('fr');
 import Image from 'next/image';
-import loginFormImg from "@/assets/images/loginForm.jpg";
+import loginFormImg from "@/assets/images/1.jpg";
 import registerFormImg from "@/assets/images/registerForm.jpg";
 import SpinnigLoader from "@/app/components/widgets/SpinnigLoader";
 import Head from "next/head";
