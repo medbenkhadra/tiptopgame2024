@@ -1,32 +1,32 @@
 ## 1 default profiles
 # ADMIN:
       email : eric.bourdon@gmail.com
-      mdp : TiptopDefault@123
+      mdp : Mohamed6759F@
 
 
 # ADMIN 2:
-    +  email : admin@dsp5-archi-f23-15m-g2.ovh
-    +  mdp : TiptopDefault@123
+    +  email : admin@dsp5-archi-f24-15m-g7.ovh
+    +  mdp : Mohamed6759F@
 
 # STORE MANAGER:
-    +  email : manager@dsp5-archi-f23-15m-g2.ovh
-    +  mdp : TiptopDefault@123
+    +  email : manager@dsp5-archi-f24-15m-g7.ovh
+    +  mdp : Mohamed6759F@
 
 # EMPLOYEE:
-    +  email : employee@dsp5-archi-f23-15m-g2.ovh
-    +  mdp : TiptopDefault@123
+    +  email : employee@dsp5-archi-f24-15m-g7.ovh
+    +  mdp : Mohamed6759F@
 
 # CLIENT:
-    +  email : client@dsp5-archi-f23-15m-g2.ovh
-    +  mdp : TiptopDefault@123
+    +  email : client@dsp5-archi-f24-15m-g7.ovh
+    +  mdp : Mohamed6759F@
 
 # BAILIFF:
-    +  email :  bailiff@dsp5-archi-f23-15m-g2.ovh
-    +  mdp : TiptopDefault@123
+    +  email :  bailiff@dsp5-archi-f24-15m-g7.ovh
+    +  mdp : Mohamed6759F@
 
 # BAILIFF2:
-    +  email :  rick.arnaud@dsp5-archi-f23-15m-g2.ovh
-    +  mdp : TiptopDefault@123
+    +  email :  rick.arnaud@dsp5-archi-f24-15m-g7.ovh
+    +  mdp : Mohamed6759F@
 
 
 
@@ -232,17 +232,17 @@ npm run dev
 # 5 STORE MANAGERS:
     +  $i = 1,2,3,4,5
     +  email : manager${i}@dsp5-archi-f23-15m-g2.ovh
-    +  mdp : TiptopDefault@123
+    +  mdp : Mohamed6759F@
 
 # 15 EMPLOYEES:
     +  $i = 1-15
-    +  email : employee${i}@dsp5-archi-f23-15m-g2.ovh
-    +  mdp : TiptopDefault@123
+    +  email : employee${i}@dsp5-archi-f24-15m-g7.ovh
+    +  mdp : Mohamed6759F@
 
 # 30 CLIENTS:
     +  $i = 1-30
-    +  email : client${i}@dsp5-archi-f23-15m-g2.ovh
-    +  mdp : TiptopDefault@123
+    +  email : client${i}@dsp5-archi-f24-15m-g7.ovh
+    +  mdp : Mohamed6759F@
 
 #
 #### Or you can use the tiptop profiles created in the top of readme.md file
