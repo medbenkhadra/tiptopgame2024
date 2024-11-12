@@ -225,6 +225,7 @@ body, * {
   transform: scale(1.05); /* Zoom au survol */
   transition: transform 0.3s ease;
 }
+
 .text-muted {
   color: #7D7D7D; /* Couleur pour le texte pour plus de douceur */
 }
@@ -302,9 +303,6 @@ body, * {
   margin-bottom: 2px;
 }
 
-.cookie-consent-banner__actions {
-
-}
 
 .cookie-consent-banner__actions button {
   border: none;
