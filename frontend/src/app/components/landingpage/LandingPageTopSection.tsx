@@ -241,94 +241,95 @@ function LandingPageTopSection() {
 
                 <TopGameInfoBannerComponent></TopGameInfoBannerComponent>
                 <div className="container my-5">
-    <section id="steps">
-        <div className="text-center mb-5">
-            <span>Guide</span>
-            <h2 className="font-weight-bold display-4 ">
-                Comment participer et
-                <span style={{ color: '#87be4c' }}> Gagner?</span>
-            </h2>
-        </div>
-        <div className="row floating">
-            {[1, 2, 3, 4].map((stepNumber, index) => (
-                <div
-                    className={`col-sm-12 col-md-6 d-flex justify-content-center ${index % 2 === 0 ? 'text-left' : 'text-right'}`}
-                    key={stepNumber}
-                    style={{
-                        display: 'flex',
-                        justifyContent: index % 2 === 0 ? 'flex-start' : 'flex-end',
-                        animation: 'fadeInUp 0.5s ease-out',
-                    }}
-                >
-                    <div className="step-container bg-light position-relative p-4 my-5 shadow rounded" style={{ width: '100%', maxWidth: '300px' }}>
-                        <div
-                            className="step-icon font-weight-bold text-white rounded-circle d-flex align-items-center justify-content-center position-absolute"
-                            style={{
-                                width: '60px',
-                                height: '60px',
-                                top: '-30px',
-                                left: index % 2 === 0 ? '-30px' : 'auto',
-                                right: index % 2 === 1 ? '-30px' : 'auto',
-                                backgroundColor: '#87be4c',
-                                border: '4px solid white',
-                            }}
-                        >
-                            {stepNumber}
-                        </div>
-                        <div className="text-center">
-                            <h4>
-                                <span style={{ color: '#87be4c' }}>Étape {stepNumber}</span>
-                            </h4>
-                            <p className="font-weight-light my-3">
-                                {stepNumber === 1 && (
-                                    <>
-                                        <span role="img" aria-label="shop">🛒</span> Faites un saut dans notre boutique et laissez-vous tenter par un thé Tip Top, 
-                                        soigneusement sélectionné pour éveiller vos sens. Une première gorgée vers la victoire !
-                                    </>
-                                )}
-                                {stepNumber === 2 && (
-                                    <>
-                                        <span role="img" aria-label="ticket">🎟️</span> Conservez votre ticket de caisse comme un trésor ! Récupérez le code unique 
-                                        et entrez-le sur notre site pour vous rapprocher encore un peu plus de votre récompense.
-                                    </>
-                                )}
-                                {stepNumber === 3 && (
-                                    <>
-                                        <span role="img" aria-label="form">📝</span> Quelques clics pour compléter le formulaire et vous voilà prêt à tenter votre chance. 
-                                        Pendant que vous savourez votre thé, laissez la magie opérer !
-                                    </>
-                                )}
-                                {stepNumber === 4 && (
-                                    <>
-                                        <span role="img" aria-label="gift">🎁</span> Bravo ! Rendez-vous en boutique pour réclamer votre cadeau et plongez dans une nouvelle expérience de thé Tip Top, 
-                                        offerte avec toute notre passion.
-                                    </>
-                                )}
-                            </p>
-                        </div>
+                <section id="steps">
+    <div className="text-center mb-5">
+        <span>Guide</span>
+        <h2 className="font-weight-bold display-4">
+            Comment participer et
+            <span style={{ color: '#D4AF37' }}> Gagner?</span>
+        </h2>
+    </div>
+    <div className="row floating">
+        {[1, 2, 3, 4].map((stepNumber, index) => (
+            <div
+                className={`col-sm-12 col-md-6 d-flex justify-content-center ${index % 2 === 0 ? 'text-left' : 'text-right'}`}
+                key={stepNumber}
+                style={{
+                    display: 'flex',
+                    justifyContent: index % 2 === 0 ? 'flex-start' : 'flex-end',
+                    animation: 'fadeInUp 0.5s ease-out',
+                }}
+            >
+                <div className="step-container position-relative p-4 my-5 shadow rounded" style={{ width: '100%', maxWidth: '300px', backgroundColor: '#F5F5DC' }}>
+                    <div
+                        className="step-icon font-weight-bold text-white rounded-circle d-flex align-items-center justify-content-center position-absolute"
+                        style={{
+                            width: '60px',
+                            height: '60px',
+                            top: '-30px',
+                            left: index % 2 === 0 ? '-30px' : 'auto',
+                            right: index % 2 === 1 ? '-30px' : 'auto',
+                            backgroundColor: '#FF8C00',
+                            border: '4px solid #F5F5DC',
+                        }}
+                    >
+                        {stepNumber}
+                    </div>
+                    <div className="text-center">
+                        <h4>
+                            <span style={{ color: '#8B4513' }}>Étape {stepNumber}</span>
+                        </h4>
+                        <p className="font-weight-light my-3" style={{ color: '#8B0000' }}>
+                            {stepNumber === 1 && (
+                                <>
+                                    <span role="img" aria-label="shop">🛒</span> Faites un saut dans notre boutique et laissez-vous tenter par un thé Tip Top, 
+                                    soigneusement sélectionné pour éveiller vos sens. Une première gorgée vers la victoire !
+                                </>
+                            )}
+                            {stepNumber === 2 && (
+                                <>
+                                    <span role="img" aria-label="ticket">🎟️</span> Conservez votre ticket de caisse comme un trésor ! Récupérez le code unique 
+                                    et entrez-le sur notre site pour vous rapprocher encore un peu plus de votre récompense.
+                                </>
+                            )}
+                            {stepNumber === 3 && (
+                                <>
+                                    <span role="img" aria-label="form">📝</span> Quelques clics pour compléter le formulaire et vous voilà prêt à tenter votre chance. 
+                                    Pendant que vous savourez votre thé, laissez la magie opérer !
+                                </>
+                            )}
+                            {stepNumber === 4 && (
+                                <>
+                                    <span role="img" aria-label="gift">🎁</span> Bravo ! Rendez-vous en boutique pour réclamer votre cadeau et plongez dans une nouvelle expérience de thé Tip Top, 
+                                    offerte avec toute notre passion.
+                                </>
+                            )}
+                        </p>
                     </div>
                 </div>
-            ))}
-        </div>
-        <style jsx>{`
-            /* Animation flottante */
-            @keyframes floating {
-                0% {
-                    transform: translateY(0px);
-                }
-                50% {
-                    transform: translateY(-10px);
-                }
-                100% {
-                    transform: translateY(0px);
-                }
+            </div>
+        ))}
+    </div>
+    <style jsx>{`
+        /* Animation flottante */
+        @keyframes floating {
+            0% {
+                transform: translateY(0px);
             }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
 
-            .floating {
-                animation: floating 3s ease-in-out infinite;
-            }
-        `}</style>
-    </section>
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+    `}</style>
+</section>
+
 </div>
 
 

@@ -82,8 +82,9 @@ body, * {
 }
 
 .contact .heading h2 span {
-  color: #7BC558;
+  color: #D4A373; /* Ajuste la couleur des sous-titres */
 }
+
 
 .contact .heading p {
   font-size: 1.1rem;
@@ -179,6 +180,7 @@ body, * {
   width: 44px;
 }
 
+
 .section-title-border-white {
   background-color: #fff;
   height: 2px;
@@ -204,6 +206,12 @@ body, * {
   max-width: 450px;
   font-size: 24px;
 }
+.about_header_main .about_heading {
+  color: #C68642; /* Couleur chaleureuse pour les titres principaux */
+}
+.section_subtitle {
+  color: #7B7B7B; /* Assombrit le texte pour une meilleure lisibilité */
+}
 
 .about_icon span {
   position: relative;
@@ -212,6 +220,16 @@ body, * {
 
 .about_content_box_all {
   padding: 28px;
+}
+.about_content_box_all:hover {
+  transform: scale(1.05); /* Zoom au survol */
+  transition: transform 0.3s ease;
+}
+.text-muted {
+  color: #7D7D7D; /* Couleur pour le texte pour plus de douceur */
+}
+.about_icon_box p {
+  color: #00bd2a;
 }
 
 .ant-modal-content .ant-btn-primary {
