@@ -20,7 +20,7 @@ interface TimeRemaining {
 export default function TopGameInfoBannerComponent() {
     const [topBannerOpen, setTopBannerOpen] = useState(true);
     const [loading, setLoading] = useState(false);
-    const [gameConfig, setGameConfig] = useState<DataType>({got
+    const [gameConfig, setGameConfig] = useState<DataType>({
         startDate: "",
         time: ""
     });
