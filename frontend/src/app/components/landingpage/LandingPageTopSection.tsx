@@ -330,7 +330,7 @@ function LandingPageTopSection() {
     `}</style>
 </section>
 
-</div>
+    </div>
 
 
 
