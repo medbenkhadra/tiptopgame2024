@@ -231,35 +231,35 @@ jobs:
 
   # Deploy to production environment
   deploy_production:
-  docker:
-    - image: almalinux:8.8
-  steps:
-    - run:
-        name: prepare
-        command: |
-          rpm --import https://repo.almalinux.org/almalinux/RPM-GPG-KEY-AlmaLinux
-          yum update -y
-          rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
-          # Check repository configuration
-          cat /etc/yum.repos.d/*.repo
-          yum clean packages
-          yum clean metadata
-          yum makecache
-          yum install -y git curl zip unzip openssh-clients openssh-server
-    - checkout
-    - add_ssh_keys
-    - run:
-        name: Ensure known_hosts exists and add server's key
-        command: |
-          mkdir -p ~/.ssh
-          touch ~/.ssh/known_hosts
-          ssh-keyscan -H $VM_IPADDRESS >> ~/.ssh/known_hosts
-    - run:
-        name: deploy
-        command: |
-          # Se connecter à votre serveur et déployer les conteneurs Docker
-          ssh $VM_USER@$VM_IPADDRESS "cd docker && docker-compose pull frontend && docker-compose pull backend && docker-compose up --force-recreate --no-deps -d frontend backend "
-  
+    docker:
+      - image: almalinux:8.8
+    steps:
+      - run:
+          name: prepare
+          command: |
+            rpm --import https://repo.almalinux.org/almalinux/RPM-GPG-KEY-AlmaLinux
+            yum update -y
+            rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux
+            # Check repository configuration
+            cat /etc/yum.repos.d/*.repo
+            yum clean packages
+            yum clean metadata
+            yum makecache
+            yum install -y git curl zip unzip openssh-clients openssh-server
+      - checkout
+      - add_ssh_keys
+      - run:
+          name: Ensure known_hosts exists and add server's key
+          command: |
+            mkdir -p ~/.ssh
+            touch ~/.ssh/known_hosts
+            ssh-keyscan -H $VM_IPADDRESS >> ~/.ssh/known_hosts
+      - run:
+          name: deploy
+          command: |
+            # Se connecter à votre serveur et déployer les conteneurs Docker
+            ssh $VM_USER@$VM_IPADDRESS "cd docker && docker-compose pull frontend && docker-compose pull backend && docker-compose up --force-recreate --no-deps -d frontend backend "
+
   deploy_development:
     docker:
       - image: almalinux:8.8
