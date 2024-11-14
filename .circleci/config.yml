@@ -40,7 +40,7 @@ jobs:
         command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_general_ci
 
     environment:
-      DOCKER_IMAGE_BASE_URL: ghcr.io/furious-ducks-tiptop/backend-staging
+      DOCKER_IMAGE_BASE_URL: ghcr.io/medbenkhadra/backend-staging
     steps:
       - checkout
       - run:
@@ -73,7 +73,7 @@ jobs:
     docker:
       - image: docker:20.10.8
     environment:
-      DOCKER_IMAGE_BASE_URL: ghcr.io/furious-ducks-tiptop/frontend-dev
+      DOCKER_IMAGE_BASE_URL: ghcr.io/medbenkhadra/frontend-dev
     steps:
       - run: apk update
       - run: apk add git
@@ -86,14 +86,14 @@ jobs:
             cd frontend
             rm -rf node_modules
             rm -rf .next
-            docker build --file Dockerfile.dev -t ghcr.io/furious-ducks-tiptop/frontend-dev:latest .
-            docker push ghcr.io/furious-ducks-tiptop/frontend-dev:latest
+            docker build --file Dockerfile.dev -t ghcr.io/medbenkhadra/frontend-dev:latest .
+            docker push ghcr.io/medbenkhadra/frontend-dev:latest
 
   build_backend_dev:
     docker:
       - image: docker:20.10.8
     environment:
-      DOCKER_IMAGE_BASE_URL: ghcr.io/furious-ducks-tiptop/backend-dev
+      DOCKER_IMAGE_BASE_URL: ghcr.io/medbenkhadra/backend-dev
     steps:
       - run: apk update
       - run: apk add git
@@ -104,15 +104,15 @@ jobs:
           command: |
             echo $CI_REGISTRY_TOKEN | docker login ghcr.io -u $CI_REGISTRY_USER --password-stdin
             cd backend
-            docker build -t ghcr.io/furious-ducks-tiptop/backend-dev:latest .
-            docker push ghcr.io/furious-ducks-tiptop/backend-dev:latest
+            docker build -t ghcr.io/medbenkhadra/backend-dev:latest .
+            docker push ghcr.io/medbenkhadra/backend-dev:latest
 
 
   build_frontend_staging:
     docker:
       - image: docker:20.10.8
     environment:
-      DOCKER_IMAGE_BASE_URL: ghcr.io/furious-ducks-tiptop/frontend-staging
+      DOCKER_IMAGE_BASE_URL: ghcr.io/medbenkhadra/frontend-staging
     steps:
       - run: apk update
       - run: apk add git
@@ -125,14 +125,14 @@ jobs:
             cd frontend
             rm -rf node_modules
             rm -rf .next
-            docker build  --file Dockerfile.staging -t ghcr.io/furious-ducks-tiptop/frontend-staging:latest .
-            docker push ghcr.io/furious-ducks-tiptop/frontend-staging:latest
+            docker build  --file Dockerfile.staging -t ghcr.io/medbenkhadra/frontend-staging:latest .
+            docker push ghcr.io/medbenkhadra/frontend-staging:latest
 
   build_backend_staging:
     docker:
       - image: docker:20.10.8
     environment:
-      DOCKER_IMAGE_BASE_URL: ghcr.io/furious-ducks-tiptop/backend-staging
+      DOCKER_IMAGE_BASE_URL: ghcr.io/medbenkhadra/backend-staging
     steps:
       - run: apk update
       - run: apk add git
@@ -143,8 +143,8 @@ jobs:
           command: |
             echo $CI_REGISTRY_TOKEN | docker login ghcr.io -u $CI_REGISTRY_USER --password-stdin
             cd backend
-            docker build -t ghcr.io/furious-ducks-tiptop/backend-staging:latest .
-            docker push ghcr.io/furious-ducks-tiptop/backend-staging:latest
+            docker build -t ghcr.io/medbenkhadra/backend-staging:latest .
+            docker push ghcr.io/medbenkhadra/backend-staging:latest
 
 
   # Build and push frontend image
@@ -152,7 +152,7 @@ jobs:
     docker:
       - image: docker:20.10.8
     environment:
-      DOCKER_IMAGE_BASE_URL: ghcr.io/furious-ducks-tiptop/frontend-preprod
+      DOCKER_IMAGE_BASE_URL: ghcr.io/medbenkhadra/frontend-preprod
     steps:
       - run: apk update
       - run: apk add git
@@ -165,15 +165,15 @@ jobs:
             cd frontend
             rm -rf node_modules
             rm -rf .next
-            docker build  --file Dockerfile.preprod -t ghcr.io/furious-ducks-tiptop/frontend-preprod:latest .
-            docker push ghcr.io/furious-ducks-tiptop/frontend-preprod:latest
+            docker build  --file Dockerfile.preprod -t ghcr.io/medbenkhadra/frontend-preprod:latest .
+            docker push ghcr.io/medbenkhadra/frontend-preprod:latest
 
   # Build and push backend image
   build_backend_preprod:
     docker:
       - image: docker:20.10.8
     environment:
-      DOCKER_IMAGE_BASE_URL: ghcr.io/furious-ducks-tiptop/backend-preprod
+      DOCKER_IMAGE_BASE_URL: ghcr.io/medbenkhadra/backend-preprod
     steps:
       - run: apk update
       - run: apk add git
@@ -184,8 +184,8 @@ jobs:
           command: |
             echo $CI_REGISTRY_TOKEN | docker login ghcr.io -u $CI_REGISTRY_USER --password-stdin
             cd backend
-            docker build -t ghcr.io/furious-ducks-tiptop/backend-preprod:latest .
-            docker push ghcr.io/furious-ducks-tiptop/backend-preprod:latest
+            docker build -t ghcr.io/medbenkhadra/backend-preprod:latest .
+            docker push ghcr.io/medbenkhadra/backend-preprod:latest
   
   
 
@@ -194,7 +194,7 @@ jobs:
     docker:
       - image: docker:20.10.8
     environment:
-      DOCKER_IMAGE_BASE_URL: ghcr.io/furious-ducks-tiptop/frontend
+      DOCKER_IMAGE_BASE_URL: ghcr.io/medbenkhadra/frontend
     steps:
       - run: apk update
       - run: apk add git
@@ -207,15 +207,15 @@ jobs:
             cd frontend
             rm -rf node_modules
             rm -rf .next
-            docker build -t ghcr.io/furious-ducks-tiptop/frontend:latest .
-            docker push ghcr.io/furious-ducks-tiptop/frontend:latest
+            docker build -t ghcr.io/medbenkhadra/frontend:latest .
+            docker push ghcr.io/medbenkhadra/frontend:latest
 
   # Build and push backend image
   build_backend:
     docker:
       - image: docker:20.10.8
     environment:
-      DOCKER_IMAGE_BASE_URL: ghcr.io/furious-ducks-tiptop/backend
+      DOCKER_IMAGE_BASE_URL: ghcr.io/medbenkhadra/backend
     steps:
       - run: apk update
       - run: apk add git
@@ -226,8 +226,8 @@ jobs:
           command: |
             echo $CI_REGISTRY_TOKEN | docker login ghcr.io -u $CI_REGISTRY_USER --password-stdin
             cd backend
-            docker build -t ghcr.io/furious-ducks-tiptop/backend:latest .
-            docker push ghcr.io/furious-ducks-tiptop/backend:latest
+            docker build -t ghcr.io/medbenkhadra/backend:latest .
+            docker push ghcr.io/medbenkhadra/backend:latest
 
   # Deploy to production environment
   deploy_production:
