@@ -50,7 +50,7 @@ class AddTipTopCompany extends Command
         $admin=$this->addAdminProfile('eric.bourdon@gmail.com');
         $this->addStoreManagerRelationShipWithAllStores($this->entityManager, $admin, $store);
 
-        $admin=$this->addAdminProfile('admin@dsp5-archi-f23-15m-g2.ovh');
+        $admin=$this->addAdminProfile('admin@dsp5-archi-f23-15m-g7.ovh');
         $this->addStoreManagerRelationShipWithAllStores($this->entityManager, $admin, $store);
 
         $this->addDefaultProfiles();
@@ -121,7 +121,7 @@ class AddTipTopCompany extends Command
         $userManager->setIsActive(true);
         $userManager->setActivitedAt(new \DateTime());
         $userManager->setDateOfBirth(new \DateTime('1980-01-06'));
-        $plainPassword = 'TiptopDefault@123';
+        $plainPassword = 'Mohamed6759F@';
         $hashedPassword = $this->passwordEncoder->hashPassword($userManager, $plainPassword);
         $userManager->setPassword($hashedPassword);
 
@@ -151,14 +151,14 @@ class AddTipTopCompany extends Command
         $userManager->setLastname('Quentin');
         $userManager->setFirstname('Dupont');
         $userManager->setGender('Homme');
-        $userManager->setEmail('manager@dsp5-archi-f23-15m-g2.ovh');
+        $userManager->setEmail('manager@dsp5-archi-f23-15m-g7.ovh');
         $userManager->setRole($storesAdminRole);
         $userManager->setStatus(User::STATUS_OPEN);
         $userManager->setCreatedAt(new \DateTime());
         $userManager->setIsActive(true);
         $userManager->setActivitedAt(new \DateTime());
         $userManager->setDateOfBirth(new \DateTime('1980-01-06'));
-        $plainPassword = 'TiptopDefault@123';
+        $plainPassword = 'Mohamed6759F@';
         $hashedPassword = $this->passwordEncoder->hashPassword($userManager, $plainPassword);
         $userManager->setPassword($hashedPassword);
 
@@ -182,14 +182,14 @@ class AddTipTopCompany extends Command
         $userManager->setLastname('Jean');
         $userManager->setFirstname('Dupont');
         $userManager->setGender('Homme');
-        $userManager->setEmail('employee@dsp5-archi-f23-15m-g2.ovh');
+        $userManager->setEmail('employee@dsp5-archi-f23-15m-g7.ovh');
         $userManager->setRole($storesAdminRole);
         $userManager->setStatus(User::STATUS_OPEN);
         $userManager->setCreatedAt(new \DateTime());
         $userManager->setIsActive(true);
         $userManager->setActivitedAt(new \DateTime());
         $userManager->setDateOfBirth(new \DateTime('1980-01-06'));
-        $plainPassword = 'TiptopDefault@123';
+        $plainPassword = 'Mohamed6759F@';
         $hashedPassword = $this->passwordEncoder->hashPassword($userManager, $plainPassword);
         $userManager->setPassword($hashedPassword);
 
@@ -254,7 +254,7 @@ class AddTipTopCompany extends Command
         $bailiffUser->setLastname('Rick');
         $bailiffUser->setFirstname('Arnaud');
         $bailiffUser->setGender('Homme');
-        $bailiffUser->setEmail('rick.arnaud@dsp5-archi-f23-15m-g2.ovh');
+        $bailiffUser->setEmail('rick.arnaud@dsp5-archi-f23-15m-g7.ovh');
 
         $bailiffUser->setRole($bailiffRole);
         $bailiffUser->setStatus(User::STATUS_OPEN);
@@ -262,7 +262,7 @@ class AddTipTopCompany extends Command
         $bailiffUser->setIsActive(true);
         $bailiffUser->setActivitedAt(new \DateTime());
         $bailiffUser->setDateOfBirth(new \DateTime('1980-01-06'));
-        $plainedPassword = 'TiptopDefault@123';
+        $plainedPassword = 'Mohamed6759F@';
         $hashedPassword = $this->passwordEncoder->hashPassword($bailiffUser, $plainedPassword);
         $bailiffUser->setPassword($hashedPassword);
 
@@ -283,7 +283,7 @@ class AddTipTopCompany extends Command
         $bailiffUser->setLastname('Rick');
         $bailiffUser->setFirstname('Arnaud');
         $bailiffUser->setGender('Homme');
-        $bailiffUser->setEmail('bailiff@dsp5-archi-f23-15m-g2.ovh');
+        $bailiffUser->setEmail('bailiff@dsp5-archi-f23-15m-g7.ovh');
 
         $bailiffUser->setRole($bailiffRole);
         $bailiffUser->setStatus(User::STATUS_OPEN);
@@ -291,7 +291,7 @@ class AddTipTopCompany extends Command
         $bailiffUser->setIsActive(true);
         $bailiffUser->setActivitedAt(new \DateTime());
         $bailiffUser->setDateOfBirth(new \DateTime('1980-01-06'));
-        $plainedPassword = 'TiptopDefault@123';
+        $plainedPassword = 'Mohamed6759F@';
         $hashedPassword = $this->passwordEncoder->hashPassword($bailiffUser, $plainedPassword);
         $bailiffUser->setPassword($hashedPassword);
 

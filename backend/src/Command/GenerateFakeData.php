@@ -101,16 +101,16 @@ class GenerateFakeData extends Command
 
             if($role == Role::ROLE_CLIENT){
                    if($i === 0) {
-                       $email = "client@dsp5-archi-f23-15m-g2.ovh";
+                       $email = "client@dsp5-archi-f23-15m-g7.ovh";
                    }else{
-                       $email = "client".($i+1)."@dsp5-archi-f23-15m-g2.ovh";
+                       $email = "client".($i+1)."@dsp5-archi-f23-15m-g7.ovh";
                    }
             }
             else if ($role == Role::ROLE_EMPLOYEE){
-                    $email = "employee".($i+1)."@dsp5-archi-f23-15m-g2.ovh";
+                    $email = "employee".($i+1)."@dsp5-archi-f23-15m-g7.ovh";
             }
             else if ($role == Role::ROLE_STOREMANAGER){
-                    $email = "manager".($i+1)."@dsp5-archi-f23-15m-g2.ovh";
+                    $email = "manager".($i+1)."@dsp5-archi-f23-15m-g7.ovh";
             }
 
             $store = $allStores[array_rand($allStores)];
@@ -122,7 +122,7 @@ class GenerateFakeData extends Command
             $dob = $faker->dateTimeBetween('-100 years', '-16 years');
             $user->setDateOfBirth($dob);
             $user->setPhone($faker->phoneNumber);
-            $plainPassword = 'TiptopDefault@123';
+            $plainPassword = 'Mohamed6759F@';
             $hashedPassword = $this->passwordEncoder->hashPassword($user, $plainPassword);
             $user->setPassword($hashedPassword);
             $user->setRole($roleEntity);
@@ -279,7 +279,7 @@ class GenerateFakeData extends Command
     {
         $users = $this->entityManager->getRepository(User::class)->findBy(['role' => $role]);
 
-        $defaultUser = $this->entityManager->getRepository(User::class)->findOneBy(['email' => 'client@dsp5-archi-f23-15m-g2.ovh']);
+        $defaultUser = $this->entityManager->getRepository(User::class)->findOneBy(['email' => 'client@dsp5-archi-f23-15m-g7.ovh']);
 
         if ($defaultUser && !in_array($defaultUser, $users) && $role->getName() === Role::ROLE_CLIENT) {
             $users[] = $defaultUser;

@@ -180,8 +180,8 @@ class PostManMailerService
             'activate_account_link_client' => $activateAccountLinkClient($receiver , $emailServiceEntity),
             'activate_account_link_employee' => 'getActivateAccountLinkEmployee',
             'token_expiration_date' => $getTokenExpirationDate($receiver),
-            'wheel_of_fortune_link' => 'www.dsp5-archi-f23-15m-g2.ovh/',
-            'win_declaration_link' => 'www.dsp5-archi-f23-15m-g2.ovh/',
+            'wheel_of_fortune_link' => 'www.dsp5-archi-f23-15m-g7.ovh/',
+            'win_declaration_link' => 'www.dsp5-archi-f23-15m-g7.ovh/',
             'password' => $options['password'] ?? '',
         ];
 
@@ -226,7 +226,7 @@ class PostManMailerService
             try {
 
                 $mail = $this->initMailer();
-                $mail->setFrom('tiptop@dsp5-archi-f23-15m-g2.com', 'Thé - Tiptop');
+                $mail->setFrom('tiptop@dsp5-archi-f23-15m-g7.com', 'Thé - Tiptop');
 
                 if(!$recipient){
                     return false;
