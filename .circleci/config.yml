@@ -259,7 +259,7 @@ jobs:
           command: |
             # Se connecter à votre serveur et déployer les conteneurs Docker
             yum install -y sshpass
-            sshpass -p $VM_PASSWORD ssh $VM_USER@$VM_IPADDRESS "cd docker && docker-compose pull frontend && docker-compose pull backend && docker-compose stop frontend backend && docker-compose rm frontend backend && docker-compose up --force-recreate --no-deps -d frontend backend"
+            sshpass -p $VM_PASSWORD ssh $VM_USER@$VM_IPADDRESS "cd docker && docker-compose pull frontend && docker-compose pull backend && docker-compose stop frontend backend && docker-compose rm -f frontend backend && docker-compose up --force-recreate --no-deps -d frontend backend"
 
   deploy_development:
     docker:
