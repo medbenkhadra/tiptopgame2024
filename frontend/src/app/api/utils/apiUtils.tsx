@@ -1,6 +1,6 @@
 import axios, { AxiosRequestConfig } from 'axios';
 
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
+const BASE_URL = "https://dsp5-archi-o23a-15m-g7.fr/api";
 
 export async function fetchJson(url: string, options?: AxiosRequestConfig) {
     try {
