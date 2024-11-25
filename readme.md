@@ -17,15 +17,15 @@
     +  mdp : Mohamed6759F@
 
 # CLIENT:
-    +  email : client@dsp5-archi-f24-15m-g7.ovh
+    +  email : client@dsp5-archi-f23-15m-g7.ovh
     +  mdp : Mohamed6759F@
 
 # BAILIFF:
-    +  email :  bailiff@dsp5-archi-f24-15m-g7.ovh
+    +  email :  bailiff@dsp5-archi-f23-15m-g7.ovh
     +  mdp : Mohamed6759F@
 
 # BAILIFF2:
-    +  email :  rick.arnaud@dsp5-archi-f24-15m-g7.ovh
+    +  email :  rick.arnaud@dsp5-archi-f23-15m-g7.ovh
     +  mdp : Mohamed6759F@
 
 
