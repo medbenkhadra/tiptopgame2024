@@ -5,15 +5,15 @@
 
 
 # ADMIN 2:
-    +  email : admin@dsp5-archi-f24-15m-g7.ovh
+    +  email : admin@dsp5-archi-f23-15m-g7.ovh
     +  mdp : Mohamed6759F@
 
 # STORE MANAGER:
-    +  email : manager@dsp5-archi-f24-15m-g7.ovh
+    +  email : manager@dsp5-archi-f23-15m-g7.ovh
     +  mdp : Mohamed6759F@
 
 # EMPLOYEE:
-    +  email : employee@dsp5-archi-f24-15m-g7.ovh
+    +  email : employee@dsp5-archi-f23-15m-g7.ovh
     +  mdp : Mohamed6759F@
 
 # CLIENT:
