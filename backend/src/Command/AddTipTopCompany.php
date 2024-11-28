@@ -50,7 +50,7 @@ class AddTipTopCompany extends Command
         $admin=$this->addAdminProfile('eric.bourdon@gmail.com');
         $this->addStoreManagerRelationShipWithAllStores($this->entityManager, $admin, $store);
 
-        $admin=$this->addAdminProfile('admin@dsp5-archi-f23-15m-g7.ovh');
+        $admin=$this->addAdminProfile('admin@dsp5-archi-f23-15m-g7.fr');
         $this->addStoreManagerRelationShipWithAllStores($this->entityManager, $admin, $store);
 
         $this->addDefaultProfiles();
@@ -151,7 +151,7 @@ class AddTipTopCompany extends Command
         $userManager->setLastname('Quentin');
         $userManager->setFirstname('Dupont');
         $userManager->setGender('Homme');
-        $userManager->setEmail('manager@dsp5-archi-f23-15m-g7.ovh');
+        $userManager->setEmail('manager@dsp5-archi-f23-15m-g7.fr');
         $userManager->setRole($storesAdminRole);
         $userManager->setStatus(User::STATUS_OPEN);
         $userManager->setCreatedAt(new \DateTime());
@@ -182,7 +182,7 @@ class AddTipTopCompany extends Command
         $userManager->setLastname('Jean');
         $userManager->setFirstname('Dupont');
         $userManager->setGender('Homme');
-        $userManager->setEmail('employee@dsp5-archi-f23-15m-g7.ovh');
+        $userManager->setEmail('employee@dsp5-archi-f23-15m-g7.fr');
         $userManager->setRole($storesAdminRole);
         $userManager->setStatus(User::STATUS_OPEN);
         $userManager->setCreatedAt(new \DateTime());
@@ -254,7 +254,7 @@ class AddTipTopCompany extends Command
         $bailiffUser->setLastname('Rick');
         $bailiffUser->setFirstname('Arnaud');
         $bailiffUser->setGender('Homme');
-        $bailiffUser->setEmail('rick.arnaud@dsp5-archi-f23-15m-g7.ovh');
+        $bailiffUser->setEmail('rick.arnaud@dsp5-archi-f23-15m-g7.fr');
 
         $bailiffUser->setRole($bailiffRole);
         $bailiffUser->setStatus(User::STATUS_OPEN);
@@ -283,7 +283,7 @@ class AddTipTopCompany extends Command
         $bailiffUser->setLastname('Rick');
         $bailiffUser->setFirstname('Arnaud');
         $bailiffUser->setGender('Homme');
-        $bailiffUser->setEmail('bailiff@dsp5-archi-f23-15m-g7.ovh');
+        $bailiffUser->setEmail('bailiff@dsp5-archi-f23-15m-g7.fr');
 
         $bailiffUser->setRole($bailiffRole);
         $bailiffUser->setStatus(User::STATUS_OPEN);

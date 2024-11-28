@@ -101,16 +101,16 @@ class GenerateFakeData extends Command
 
             if($role == Role::ROLE_CLIENT){
                    if($i === 0) {
-                       $email = "client@dsp5-archi-f23-15m-g7.ovh";
+                       $email = "client@dsp5-archi-f23-15m-g7.fr";
                    }else{
-                       $email = "client".($i+1)."@dsp5-archi-f23-15m-g7.ovh";
+                       $email = "client".($i+1)."@dsp5-archi-f23-15m-g7.fr";
                    }
             }
             else if ($role == Role::ROLE_EMPLOYEE){
-                    $email = "employee".($i+1)."@dsp5-archi-f23-15m-g7.ovh";
+                    $email = "employee".($i+1)."@dsp5-archi-f23-15m-g7.fr";
             }
             else if ($role == Role::ROLE_STOREMANAGER){
-                    $email = "manager".($i+1)."@dsp5-archi-f23-15m-g7.ovh";
+                    $email = "manager".($i+1)."@dsp5-archi-f23-15m-g7.fr";
             }
 
             $store = $allStores[array_rand($allStores)];
@@ -279,7 +279,7 @@ class GenerateFakeData extends Command
     {
         $users = $this->entityManager->getRepository(User::class)->findBy(['role' => $role]);
 
-        $defaultUser = $this->entityManager->getRepository(User::class)->findOneBy(['email' => 'client@dsp5-archi-f23-15m-g7.ovh']);
+        $defaultUser = $this->entityManager->getRepository(User::class)->findOneBy(['email' => 'client@dsp5-archi-f23-15m-g7.fr']);
 
         if ($defaultUser && !in_array($defaultUser, $users) && $role->getName() === Role::ROLE_CLIENT) {
             $users[] = $defaultUser;

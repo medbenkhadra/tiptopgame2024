@@ -5,27 +5,27 @@
 
 
 # ADMIN 2:
-    +  email : admin@dsp5-archi-f23-15m-g7.ovh
+    +  email : admin@dsp5-archi-f23-15m-g7.fr
     +  mdp : Mohamed6759F@
 
 # STORE MANAGER:
-    +  email : manager@dsp5-archi-f23-15m-g7.ovh
+    +  email : manager@dsp5-archi-f23-15m-g7.fr
     +  mdp : Mohamed6759F@
 
 # EMPLOYEE:
-    +  email : employee@dsp5-archi-f23-15m-g7.ovh
+    +  email : employee@dsp5-archi-f23-15m-g7.fr
     +  mdp : Mohamed6759F@
 
 # CLIENT:
-    +  email : client@dsp5-archi-f23-15m-g7.ovh
+    +  email : client@dsp5-archi-f23-15m-g7.fr
     +  mdp : Mohamed6759F@
 
 # BAILIFF:
-    +  email :  bailiff@dsp5-archi-f23-15m-g7.ovh
+    +  email :  bailiff@dsp5-archi-f23-15m-g7.fr
     +  mdp : Mohamed6759F@
 
 # BAILIFF2:
-    +  email :  rick.arnaud@dsp5-archi-f23-15m-g7.ovh
+    +  email :  rick.arnaud@dsp5-archi-f23-15m-g7.fr
     +  mdp : Mohamed6759F@
 
 
