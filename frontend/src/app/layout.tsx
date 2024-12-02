@@ -40,7 +40,7 @@ export default function RootLayout({
       <CookiesModalComponent data-testid="cookies-modal"/>
 
       </body>
-      <GoogleAnalytics gaId="G-XLKV7N9HQT"/>
+      <GoogleAnalytics gaId="G-ZKQ99WNM6S"/>
       </html>
   )
 }
