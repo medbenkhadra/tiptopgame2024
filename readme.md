@@ -231,17 +231,17 @@ npm run dev
 ## Use those profiles to test the game
 # 5 STORE MANAGERS:
     +  $i = 1,2,3,4,5
-    +  email : manager${i}@dsp5-archi-f23-15m-g2.ovh
+    +  email : manager${i}@dsp5-archi-f23-15m-g7.fr
     +  mdp : Mohamed6759F@
 
 # 15 EMPLOYEES:
     +  $i = 1-15
-    +  email : employee${i}@dsp5-archi-f24-15m-g7.ovh
+    +  email : employee${i}@dsp5-archi-f24-15m-g7.fr
     +  mdp : Mohamed6759F@
 
 # 30 CLIENTS:
     +  $i = 1-30
-    +  email : client${i}@dsp5-archi-f24-15m-g7.ovh
+    +  email : client${i}@dsp5-archi-f24-15m-g7.fr
     +  mdp : Mohamed6759F@
 
 #
