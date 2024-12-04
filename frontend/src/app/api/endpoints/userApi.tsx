@@ -51,7 +51,7 @@ export async function register(data: {
   const config: AxiosRequestConfig = {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
       },
       data: JSON.stringify(data),
     };

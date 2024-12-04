@@ -548,7 +548,7 @@ class TicketController extends AbstractController
         }
 
         if(count($gainedBadges) > 0){
-            $this->postManMailerService->sendEmailTemplate(EmailService::EMAILSERVICE_BADGE_AWARD , $user , ['badges' => $gainedBadges]);
+            //$this->postManMailerService->sendEmailTemplate(EmailService::EMAILSERVICE_BADGE_AWARD , $user , ['badges' => $gainedBadges]);
         }
 
 

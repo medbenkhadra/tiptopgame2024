@@ -1,5 +1,5 @@
 "use strict";
-import './globals.css'
+import './globals.css'  
 import { Inter } from 'next/font/google'
 import './responsive.css'
 

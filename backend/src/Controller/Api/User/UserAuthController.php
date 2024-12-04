@@ -197,6 +197,7 @@ class UserAuthController extends AbstractController {
         try {
             $data = json_decode( $request->getContent(), true );
 
+
             foreach ( $data as $key => $dataIndex ) {
                 if ( $dataIndex === '' ) {
                     return new JsonResponse( [

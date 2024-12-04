@@ -226,7 +226,7 @@ class PostManMailerService
             try {
 
                 $mail = $this->initMailer();
-                $mail->setFrom('tiptop@dsp5-archi-f23-15m-g7.com', 'Thé - Tiptop');
+                $mail->setFrom('tiptop@dsp5-archi-o23a-15m-g7.fr');
 
                 if(!$recipient){
                     return false;

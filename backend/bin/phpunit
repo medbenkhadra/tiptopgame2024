@@ -6,7 +6,7 @@ error_reporting(E_ALL ^ E_DEPRECATED);
 
 
 if (!ini_get('date.timezone')) {
-    ini_set('date.timezone', 'UTC');
+    //ini_set('date.timezone', 'UTC');
 }
 
 if (is_file(dirname(__DIR__).'/vendor/phpunit/phpunit/phpunit')) {
