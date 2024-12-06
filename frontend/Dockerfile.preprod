@@ -31,4 +31,4 @@ ENV NODE_ENV preproduction
 EXPOSE 3003
 
 # Start the app in preproduction mode
-CMD ["npm", "run", "preprod"]
+CMD ["npm", "run", "start"]
