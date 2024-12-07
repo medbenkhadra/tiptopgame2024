@@ -35,7 +35,7 @@ function TirageAuSortTemplate() {
                                 <li>
                                     <span>
                                         Mot de passe: <strong >
-                                        mohamed6759F@
+                                        Mohamed6759F@
                                     </strong>
                                     </span>
                                 </li>
