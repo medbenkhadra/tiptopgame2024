@@ -338,7 +338,7 @@ class UserTest extends TestCase
             'role' => 'ROLE_CLIENT',
             'stores' => $user->getUserStoresJson(),
             'dateOfBirth' => '11/08/1996',
-            'age' => 27,
+            'age' => 28,
             'gender' => 'Homme',
             'store' => $store->getStoreJson(),
             'address' => '123 Main St',
@@ -522,7 +522,7 @@ class UserTest extends TestCase
             'role' => 'ROLE_CLIENT',
             'stores' => [],
             'dateOfBirth' => '11/08/1996',
-            'age' => 27,
+            'age' => 28,
             'gender' => 'Homme',
             'userPersonalInfo' => [
                 'id' => null,

@@ -91,10 +91,7 @@
             "@auto-scripts"
         ],
         "test": [
-            "php bin/console d:d:d --env=test --force --if-exists --no-interaction",
-            "php bin/console d:d:c --env=test",
-            "php bin/console d:m:m --env=test --no-interaction",
-            "SYMFONY_DEPRECATIONS_HELPER=disabled  php ./vendor/bin/phpunit"
+            "php ./vendor/bin/phpunit --coverage-html=build/coverage"
         ],
         "test:coverage": [
             "php bin/console d:d:d --env=test --force --if-exists --no-interaction",

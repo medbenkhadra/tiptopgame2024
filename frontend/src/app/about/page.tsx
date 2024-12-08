@@ -7,7 +7,7 @@ import Dayjs from 'dayjs';
 import { BulbOutlined, ExclamationCircleOutlined, StarOutlined } from "@ant-design/icons";
 
 Dayjs.locale('fr');
-import wallpaperHomepageImg from '@/assets/images/wallpaperHomepage.png';
+import wallpaperHomepageImg from '@/assets/images/apropos-pt.png';
 import Image from 'next/image';
 
 export default function About() {
