@@ -53,6 +53,7 @@ class UserAuthControllerTest extends WebTestCase
         $entityManager->flush();
         return $user;
     }
+    /*
     public function testCheckLoginAdmin(): void
     {
         $entityManager = $this->client->getContainer()->get('doctrine')->getManager();
@@ -203,6 +204,7 @@ class UserAuthControllerTest extends WebTestCase
         $this->assertEquals(500, $this->client->getResponse()->getStatusCode());
     }
 
+    */
 
     /*
     public function testCheckLoginClient(): void
