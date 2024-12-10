@@ -444,7 +444,7 @@ body, * {
 }
 
 .timeContainer .wrapper div:last-child{
-  background: #FFF5E1; /* Beige doux pour les secondes */
+  background: #8B4513; /* Beige doux pour les secondes */
   color: #333 !important; /* Ajustement du texte pour une meilleure visibilité */
 }
 
