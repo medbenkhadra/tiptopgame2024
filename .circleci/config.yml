@@ -279,12 +279,17 @@ jobs:
             yum install -y git curl zip unzip openssh-clients openssh-server
       - checkout
       - add_ssh_keys
-      - run: ssh-keyscan -H $VM_IPADDRESS >> ~/.ssh/known_hosts
+      - run:
+          name: Ensure known_hosts exists and add server's key
+          command: |
+            mkdir -p ~/.ssh
+            touch ~/.ssh/known_hosts
+            ssh-keyscan -H $VM_IPADDRESS >> ~/.ssh/known_hosts
       - run:
           name: deploy
           command: |
             # Se connecter à votre serveur et déployer les conteneurs Docker
-            ssh $VM_USER@$VM_IPADDRESS "cd docker && docker-compose pull frontend-dev && docker-compose pull backend-dev && docker-compose up --force-recreate --no-deps -d frontend-dev backend-dev "  
+            sshpass -p $VM_PASSWORD ssh $VM_USER@$VM_IPADDRESS "cd docker && docker-compose pull frontend-dev && docker-compose pull backend-dev && docker-compose stop frontend-dev backend-dev && docker-compose rm -f frontend-dev backend-dev && docker-compose up --force-recreate --no-deps -d frontend-dev backend-dev"
 
 
   deploy_staging:
@@ -305,12 +310,17 @@ jobs:
             yum install -y git curl zip unzip openssh-clients openssh-server
       - checkout
       - add_ssh_keys
-      - run: ssh-keyscan -H $VM_IPADDRESS >> ~/.ssh/known_hosts
+      - run:
+          name: Ensure known_hosts exists and add server's key
+          command: |
+            mkdir -p ~/.ssh
+            touch ~/.ssh/known_hosts
+            ssh-keyscan -H $VM_IPADDRESS >> ~/.ssh/known_hosts
       - run:
           name: deploy
           command: |
             # Se connecter à votre serveur et déployer les conteneurs Docker
-            ssh $VM_USER@$VM_IPADDRESS "cd docker && docker-compose pull frontend-staging && docker-compose pull backend-staging && docker-compose up --force-recreate --no-deps -d frontend-staging backend-staging "  
+            sshpass -p $VM_PASSWORD ssh $VM_USER@$VM_IPADDRESS "cd docker && docker-compose pull frontend-staging && docker-compose pull backend-staging && docker-compose stop frontend-staging backend-staging && docker-compose rm -f frontend-staging backend-staging && docker-compose up --force-recreate --no-deps -d frontend-staging backend-staging"
 
   deploy_preprod:
     docker:
@@ -330,12 +340,17 @@ jobs:
             yum install -y git curl zip unzip openssh-clients openssh-server
       - checkout
       - add_ssh_keys
-      - run: ssh-keyscan -H $VM_IPADDRESS >> ~/.ssh/known_hosts
+      - run:
+          name: Ensure known_hosts exists and add server's key
+          command: |
+            mkdir -p ~/.ssh
+            touch ~/.ssh/known_hosts
+            ssh-keyscan -H $VM_IPADDRESS >> ~/.ssh/known_hosts
       - run:
           name: deploy
           command: |
             # Se connecter à votre serveur et déployer les conteneurs Docker
-            ssh $VM_USER@$VM_IPADDRESS "cd docker && docker-compose pull frontend-preprod && docker-compose pull backend-preprod && docker-compose up --force-recreate --no-deps -d frontend-preprod backend-preprod "  
+            sshpass -p $VM_PASSWORD ssh $VM_USER@$VM_IPADDRESS "cd docker && docker-compose pull frontend-preprod && docker-compose pull backend-preprod && docker-compose stop frontend-preprod backend-preprod && docker-compose rm -f frontend-preprod backend-preprod && docker-compose up --force-recreate --no-deps -d frontend-preprod backend-preprod"
 
 
 workflows:
