@@ -2,7 +2,7 @@
 import React from 'react';
 import {Row, Col, Modal} from 'antd';
 import styles from '../../../styles/components/footer.module.css';
-
+import { FacebookFilled, InstagramFilled, YoutubeFilled } from '@ant-design/icons'; // Ou utilise react-icons
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
@@ -97,8 +97,19 @@ const FooterComponent = () => {
               </Button>
             </InputGroup>
           </div>
-
+          <div className={`pt-3 d-flex justify-content-center align-items-center`}>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className={`${styles.socialIcon}`}>
+              <FacebookFilled style={{ fontSize: '30px', color: '#4267B2', margin: '0 15px' }} />
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className={`${styles.socialIcon}`}>
+              <InstagramFilled style={{ fontSize: '30px', color: '#E1306C', margin: '0 15px' }} />
+            </a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className={`${styles.socialIcon}`}>
+              <YoutubeFilled style={{ fontSize: '30px', color: '#FF0000', margin: '0 15px' }} />
+            </a>
+          </div>
         </Col>
+       
       </Row>
       <Row className="px-3 py-2">
         <Col className={`w-100 d-flex`} >
