@@ -10,7 +10,7 @@ import {
     UserOutlined
 } from "@ant-design/icons";
 import Image from "next/image";
-import logoTipTopImg from "@/assets/images/logovf.jpeg";
+import logoTipTopImg from "@/assets/images/logof.png";
 import locale from "antd/locale/fr_FR";
 import {saveUserProfile} from "@/app/api";
 

@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Image from "next/image";
-import logoTipTop from '@/assets/images/logovf.jpeg';
+import logoTipTop from '@/assets/images/logof.png';
 import { HomeOutlined, QuestionCircleOutlined, GiftOutlined, MailOutlined, PlayCircleOutlined, ExclamationCircleOutlined, DashboardOutlined, UserOutlined, LogoutOutlined, AppstoreFilled } from '@ant-design/icons';
 import { Modal } from 'antd';
 

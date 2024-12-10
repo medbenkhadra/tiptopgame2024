@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 import {Col, Row} from 'react-bootstrap';
 import {signIn} from 'next-auth/react';
 import Image from 'next/image';
-import logoTipTopImg from "@/assets/images/logovf.jpeg";
+import logoTipTopImg from "@/assets/images/logof.png";
 
 import {Button, Checkbox, Form, Input, Modal, Space} from 'antd';
 
