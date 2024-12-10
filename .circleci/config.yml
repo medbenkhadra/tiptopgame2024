@@ -59,6 +59,7 @@ jobs:
             cd backend
             pwd
             ls -la  
+            composer update
             composer install
             php bin/console d:d:d --env=test --connection=test --force --if-exists --no-interaction 
             php bin/console d:d:c --env=test --connection=test  -n
